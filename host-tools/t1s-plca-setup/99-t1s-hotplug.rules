@@ -1,0 +1,1 @@
+ACTION=="add", SUBSYSTEM=="net", ATTR{address}=="9c:95:6e:b5:64:78", TAG+="systemd", ENV{SYSTEMD_WANTS}="t1s-plca@%k.service"

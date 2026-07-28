@@ -1,0 +1,2 @@
+# /etc/udev/rules.d/98-t1s-force-rebind.rules
+ACTION=="add", SUBSYSTEM=="net", DRIVERS=="smsc95xx", RUN+="/usr/local/bin/t1s-force-rebind.sh %k"

@@ -1,0 +1,14 @@
+[Unit]
+Description=Apply 10BASE-T1S PLCA Configuration on %I
+After=sys-subsystem-net-devices-%i.device
+BindsTo=sys-subsystem-net-devices-%i.device
+
+[Service]
+Type=oneshot
+EnvironmentFile=/etc/t1s-plca.env
+ExecStartPre=/bin/sleep 1
+ExecStart=/usr/sbin/ethtool --set-plca-cfg %i enable on node-id ${NODE_ID} node-cnt ${NODE_COUNT} to-tmr ${TO_TMR} burst-tmr ${BURST_TMR}
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
