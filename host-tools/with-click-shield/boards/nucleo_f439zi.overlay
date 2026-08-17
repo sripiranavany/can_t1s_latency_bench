@@ -1,0 +1,58 @@
+&mac {
+    status = "disabled";
+
+    mdio {
+        status = "disabled";
+
+        ethernet-phy@0 {
+            status = "disabled";
+        };
+    };
+};
+
+&spi1 {
+    status = "okay";
+    pinctrl-0 = <&spi1_sck_pa5 &spi1_miso_pa6 &spi1_mosi_pa7>;
+    pinctrl-names = "default";
+
+    cs-gpios = <&gpiod 14 GPIO_ACTIVE_LOW>;
+
+    eth0: lan865x@0 {
+        compatible = "microchip,lan865x";
+        status = "okay";
+        reg = <0>;
+        spi-max-frequency = <1000000>; /* 1 MHz */
+        spi-cs-setup-delay-ns = <1000>;
+
+        int-gpios = <&gpiog 10 GPIO_ACTIVE_LOW>;
+        rst-gpios = <&gpioc 0 GPIO_ACTIVE_LOW>;
+
+        phy-handle = <&phy0>;
+
+        mdio0: lan865x_mdio {
+            compatible = "microchip,lan865x-mdio";
+            status = "okay";
+            #address-cells = <1>;
+            #size-cells = <0>;
+
+            phy0: ethernet-phy@0 {
+                compatible = "microchip,t1s-phy";
+                reg = <0>;
+                status = "okay";
+                plca-enable;
+                plca-node-id = <1>;
+                plca-node-count = <8>;
+                plca-burst-count = <0x0>;
+                plca-burst-timer = <0x80>;
+                plca-to-timer = <0x20>;
+            };
+        };
+    };
+};
+
+&can1 {
+    status = "okay";
+    pinctrl-0 = <&can1_rx_pd0 &can1_tx_pd1>;
+    pinctrl-names = "default";
+    bitrate = <500000>;
+};
