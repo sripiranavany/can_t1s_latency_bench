@@ -1,58 +1,56 @@
+#include <zephyr/dt-bindings/gpio/gpio.h>
+
 &mac {
-    status = "disabled";
+	status = "disabled";
+};
 
-    mdio {
-        status = "disabled";
+&mdio {
+	status = "disabled";
+};
 
-        ethernet-phy@0 {
-            status = "disabled";
-        };
-    };
+&eth_phy {
+	status = "disabled";
 };
 
 &spi1 {
-    status = "okay";
-    pinctrl-0 = <&spi1_sck_pa5 &spi1_miso_pa6 &spi1_mosi_pa7>;
-    pinctrl-names = "default";
+	status = "okay";
+	pinctrl-0 = <&spi1_sck_pb3 &spi1_miso_pb4 &spi1_mosi_pb5>;
+	pinctrl-names = "default";
 
-    cs-gpios = <&gpiod 14 GPIO_ACTIVE_LOW>;
+	/* Socket 3 (not socket 1): socket 1's RST1 lands on PA13, which is
+	 * shorted to the onboard ST-LINK's SWDIO and can't be used as a
+	 * general-purpose reset output. Socket 3's RST3 (PH1) avoids this. */
+	cs-gpios = <&gpiog 8 GPIO_ACTIVE_LOW>;
 
-    eth0: lan865x@0 {
-        compatible = "microchip,lan865x";
-        status = "okay";
-        reg = <0>;
-        spi-max-frequency = <1000000>; /* 1 MHz */
-        spi-cs-setup-delay-ns = <1000>;
+	eth0: lan865x@0 {
+		compatible = "microchip,lan865x";
+		status = "okay";
+		reg = <0>;
+		spi-max-frequency = <1000000>; /* 1 MHz */
+		spi-cs-setup-delay-ns = <1000>;
 
-        int-gpios = <&gpiog 10 GPIO_ACTIVE_LOW>;
-        rst-gpios = <&gpioc 0 GPIO_ACTIVE_LOW>;
+		int-gpios = <&gpiog 4 GPIO_ACTIVE_LOW>;
+		rst-gpios = <&gpioh 1 GPIO_ACTIVE_LOW>;
 
-        phy-handle = <&phy0>;
+		phy-handle = <&phy0>;
 
-        mdio0: lan865x_mdio {
-            compatible = "microchip,lan865x-mdio";
-            status = "okay";
-            #address-cells = <1>;
-            #size-cells = <0>;
+		mdio0: lan865x_mdio {
+			compatible = "microchip,lan865x-mdio";
+			status = "okay";
+			#address-cells = <1>;
+			#size-cells = <0>;
 
-            phy0: ethernet-phy@0 {
-                compatible = "microchip,t1s-phy";
-                reg = <0>;
-                status = "okay";
-                plca-enable;
-                plca-node-id = <1>;
-                plca-node-count = <8>;
-                plca-burst-count = <0x0>;
-                plca-burst-timer = <0x80>;
-                plca-to-timer = <0x20>;
-            };
-        };
-    };
-};
-
-&can1 {
-    status = "okay";
-    pinctrl-0 = <&can1_rx_pd0 &can1_tx_pd1>;
-    pinctrl-names = "default";
-    bitrate = <500000>;
+			phy0: ethernet-phy@0 {
+				compatible = "microchip,t1s-phy";
+				reg = <0>;
+				status = "okay";
+				plca-enable;
+				plca-node-id = <1>;
+				plca-node-count = <4>;
+				plca-burst-count = <0x0>;
+				plca-burst-timer = <0x80>;
+				plca-to-timer = <0x20>;
+			};
+		};
+	};
 };
