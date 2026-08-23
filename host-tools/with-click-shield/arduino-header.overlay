@@ -1,0 +1,60 @@
+/*
+ * Alternative wiring: click board on the Nucleo's Arduino headers (CN7/CN10)
+ * instead of the ST morpho headers.
+ *
+ *   west build -b nucleo_f439zi -p always . \
+ *       -DEXTRA_DTC_OVERLAY_FILE=arduino-header.overlay
+ *
+ *   click mikroBUS pin        Nucleo Arduino pin   STM32
+ *   ------------------------  -------------------  -----
+ *   4  SCK                    D13                  PA5
+ *   5  MISO (SDO)             D12                  PA6
+ *   6  MOSI (SDI)             D11                  PA7
+ *   3  CS                     D10                  PD14
+ *   2  RST                    D8                   PF12
+ *   15 INT (IRQ)              D7                   PF13
+ *   7  3.3V                   3V3                  -
+ *   8  GND                    GND                  -
+ *
+ * The reason to prefer this one: it keeps RST off PH1/OSC_OUT, so the HSE stays
+ * enabled and the system clock remains crystal-derived rather than running off
+ * the HSI's +/-1% RC oscillator. That matters for latency timestamps.
+ *
+ * Verified working: LAN865x device ready, link up, iface up=1 carrier_ok=1.
+ */
+
+#include <zephyr/dt-bindings/gpio/gpio.h>
+
+/* Undo the base overlay's HSI switch - PH1 is not used here, so the board's
+ * default HSE-bypass clocking off the ST-LINK's 8 MHz MCO can stay.
+ */
+&clk_hsi {
+	status = "disabled";
+};
+
+&clk_hse {
+	hse-bypass;
+	clock-frequency = <8000000>;
+	status = "okay";
+};
+
+&pll {
+	div-m = <8>;
+	mul-n = <336>;
+	div-p = <2>;
+	div-q = <7>;
+	clocks = <&clk_hse>;
+	status = "okay";
+};
+
+&spi1 {
+	pinctrl-0 = <&spi1_sck_pa5 &spi1_miso_pa6 &spi1_mosi_pa7>;
+	pinctrl-names = "default";
+
+	cs-gpios = <&gpiod 14 GPIO_ACTIVE_LOW>;
+};
+
+&eth0 {
+	int-gpios = <&gpiof 13 GPIO_ACTIVE_LOW>;
+	rst-gpios = <&gpiof 12 GPIO_ACTIVE_LOW>;
+};

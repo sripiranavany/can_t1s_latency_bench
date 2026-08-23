@@ -1,0 +1,59 @@
+/*
+ * MikroE Click Shield for Nucleo-144, click board in socket 3.
+ *
+ *   west build -b nucleo_f439zi -p always . \
+ *       -DEXTRA_DTC_OVERLAY_FILE=click-shield.overlay
+ *
+ * The shield routes socket 3 to exactly the pins the default overlay already
+ * uses, so this file re-asserts them rather than changing them. It exists to
+ * make the shield configuration explicit, to hold the shield-specific notes
+ * below, and to give the two setups somewhere to diverge if they ever need to.
+ *
+ *   signal   shield conn   Nucleo morpho   STM32
+ *   -------  ------------  --------------  -----
+ *   SCK      CN2 pin 31    CN12 pin 31     PB3
+ *   MISO     CN2 pin 27    CN12 pin 27     PB4
+ *   MOSI     CN2 pin 29    CN12 pin 29     PB5
+ *   CS3      CN2 pin 66    CN12 pin 66     PG8
+ *   INT3     CN2 pin 69    CN12 pin 69     PG4
+ *   RST3     CN1 pin 31    CN11 pin 31     PH1
+ *
+ * Derived from the Click Shield for Nucleo-144 v102 schematic cross-referenced
+ * against UM1974 Table 21 (which covers NUCLEO-F439ZI).
+ *
+ * Socket 3 is the only usable socket: sockets 1 and 2 put RST on CN11 pins 13
+ * and 15, which are PA13/PA14 - SWDIO/SWCLK, wired to the onboard ST-LINK.
+ *
+ * STATUS: unproven. SPI through the shield's TXS0108E translators was
+ * intermittent and eventually stopped responding altogether, on two separate
+ * shields. The identical pinout works on direct jumper leads, so the click
+ * board and this configuration are both fine - the fault is in the shield's
+ * signal path. Before retrying:
+ *
+ *   - Verify the SEL3 logic-level switch is on 3V3, not 5V. Socket 3's
+ *     translators (U8: SPI/CS/RST, U9: INT) run off VLS3, and the Two-Wire ETH
+ *     Click is a 3.3V board.
+ *   - Expect the IRQ_N power-ordering trap if the shield powers the click from
+ *     its own USB-C ahead of the STM32 booting. See
+ *     docs/direct-lan8651-stm32f439zi.md.
+ *   - Do not drive RST low for long periods. MikroE's pinout table labels the
+ *     click's RST pin "Reset / ID SEL"; a multi-millisecond assertion may latch
+ *     the chip into a different configuration at reset release.
+ *
+ * The HSI clock switch that RST3/PH1 requires lives in the default overlay -
+ * see boards/nucleo_f439zi.overlay.
+ */
+
+#include <zephyr/dt-bindings/gpio/gpio.h>
+
+&spi1 {
+	pinctrl-0 = <&spi1_sck_pb3 &spi1_miso_pb4 &spi1_mosi_pb5>;
+	pinctrl-names = "default";
+
+	cs-gpios = <&gpiog 8 GPIO_ACTIVE_LOW>;
+};
+
+&eth0 {
+	int-gpios = <&gpiog 4 GPIO_ACTIVE_LOW>;
+	rst-gpios = <&gpioh 1 GPIO_ACTIVE_LOW>;
+};

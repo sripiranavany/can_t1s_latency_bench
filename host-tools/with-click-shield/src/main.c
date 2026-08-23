@@ -18,13 +18,11 @@ static void carrier_event_handler(struct net_mgmt_event_callback *cb, uint64_t m
 	}
 }
 
+static const struct device *const eth_dev = DEVICE_DT_GET(DT_NODELABEL(eth0));
+
 int main(void)
 {
 	printf("main() started, Timestamp: %lld ms\n", k_uptime_get());
-
-	const struct device *eth_dev = DEVICE_DT_GET(DT_NODELABEL(eth0));
-
-	printf("Checking LAN865x device (%s)...\n", eth_dev->name);
 
 	if (!device_is_ready(eth_dev)) {
 		printf("Error: LAN865x device not ready (init failed), Timestamp: %lld ms\n",
@@ -40,8 +38,6 @@ int main(void)
 		printf("Error: no network interface found\n");
 		return 0;
 	}
-
-	printf("Default interface: %p, is_up=%d\n", (void *)iface, net_if_is_up(iface));
 
 	uint8_t *mac = net_if_get_link_addr(iface)->addr;
 
@@ -61,5 +57,6 @@ int main(void)
 		       net_if_oper_state(iface), k_uptime_get());
 		k_msleep(2000);
 	}
+
 	return 0;
 }
