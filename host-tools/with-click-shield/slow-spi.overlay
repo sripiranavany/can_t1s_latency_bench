@@ -1,0 +1,22 @@
+/*
+ * Drop the SPI clock to 1 MHz.
+ *
+ * Stackable with any of the wiring overlays - separate the files with a
+ * semicolon and quote the list:
+ *
+ *   west build -b nucleo_f439zi -p always . \
+ *       -DEXTRA_DTC_OVERLAY_FILE="click-shield.overlay;slow-spi.overlay"
+ *
+ * Use it to separate a signal-integrity problem from a wiring or configuration
+ * problem: if something works at 1 MHz and fails at 20 MHz, the SPI path is
+ * marginal; if it fails identically at both, look elsewhere.
+ *
+ * Note that the Click Shield's "Header transmission error!" symptoms turned out
+ * NOT to be a speed problem - the socket 3 logic-level switch was on 5V, so the
+ * translators were driving 5V into the LAN8651's 3.3V I/O. Check that first;
+ * see click-shield.overlay.
+ */
+
+&eth0 {
+	spi-max-frequency = <1000000>;
+};

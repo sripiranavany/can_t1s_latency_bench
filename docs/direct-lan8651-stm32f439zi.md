@@ -8,8 +8,10 @@ This is the configuration that works. Firmware lives in
 [`host-tools/with-click-shield/`](../host-tools/with-click-shield/) and this is
 its default build.
 
-> For the Click Shield route, see [Why not the Click Shield](#why-not-the-click-shield)
-> at the end. It is not currently working.
+> The Click Shield route also works — see
+> [Using the Click Shield](#using-the-click-shield) at the end. It needs the
+> socket 3 logic-level switch set to 3V3, which is the single thing most likely
+> to waste your day.
 
 ---
 
@@ -193,11 +195,26 @@ independently powered.
 
 ---
 
-## Why not the Click Shield
+## Using the Click Shield
 
-The MikroE Click Shield for Nucleo-144 route is **unproven** — it never worked
-in testing, but the same pinout works fine on direct jumpers, so the fault is in
-the shield path rather than the configuration.
+The MikroE Click Shield for Nucleo-144 **works**, but only with the socket 3
+logic-level switch set to **3V3**.
+
+> ### Set the socket 3 level switch to 3V3 first
+>
+> The shield has one logic-level switch per socket, selecting VLS1–VLS4 between
+> 3V3 and 5V. Socket 3's translators — U8 (SPI/CS/RST) and U9 (INT) — take VLS3
+> as their `VCCB`. The Two-Wire ETH Click is a 3.3 V board.
+>
+> With the switch on 5V, the translators drive 5 V into the LAN8651's 3.3 V I/O.
+> SPI reads succeed intermittently, `oa_tc6: Header transmission error!` appears
+> throughout, and the chip eventually stops responding altogether. Two different
+> shields behaved identically, because both were at the default position.
+>
+> **To check:** pull the click out, leave the shield powered, and measure DC
+> volts from a socket 3 GND pin (mikroBUS pin 8 or 9) to a socket 3 signal pin
+> (pin 2 RST or pin 3 CS). The translator's B-side pull-up sits at `VCCB`, so
+> you read VLS3 directly — it must be ≈3.3 V, not ≈5 V.
 
 The socket-3 pinout is already the default overlay's pinout, so seating the
 click in socket 3 and building normally is enough.
@@ -209,41 +226,23 @@ want the configuration stated explicitly:
 west build -b nucleo_f439zi -p always . -DEXTRA_DTC_OVERLAY_FILE=click-shield.overlay
 ```
 
-What was established while trying:
+Other things worth knowing:
 
 **Socket 3 is the only usable socket.** Sockets 1 and 2 put RST on CN11 pins 13
 and 15 — PA13/PA14, i.e. SWDIO/SWCLK, wired to the onboard ST-LINK.
 
-**The socket-3 pin mapping is correct**, verified against the Click Shield for
+**The socket-3 pin mapping** was verified against the Click Shield for
 Nucleo-144 v102 schematic cross-referenced with UM1974 Table 21 (which covers
 NUCLEO-F439ZI): SCK/MISO/MOSI = PB3/PB4/PB5, CS3 = PG8, INT3 = PG4, RST3 = PH1.
 
-**RST3 needs the HSE disabled.** PH1 is also OSC_OUT. The board runs the HSE in
-bypass off the ST-LINK's 8 MHz MCO, and on STM32F4 the oscillator block keeps
-the OSC_OUT pad even in bypass — driving PH1 high reads back low until the HSE
-is turned off. Moving the PLL to the HSI frees it, at the cost of ±1% RC
-accuracy instead of crystal-derived, which is a real downside for latency
-measurements.
+**RST3 forces the HSI**, because it lands on PH1/OSC_OUT — see
+[Why PH1 forces the HSI](#why-ph1-forces-the-hsi). That costs you crystal
+accuracy, which is the main reason to prefer the Arduino-header wiring for
+measurement work.
 
-**SPI through the shield was never reliable.** Control reads succeeded
-intermittently with `oa_tc6: Header transmission error!` throughout, then
-stopped responding altogether — on two separate shields. Every SPI line passes
-through the shield's TXS0108E auto-direction translators.
-
-**Check the SEL3 switch before retrying.** The shield has per-socket logic-level
-switches selecting VLS1–VLS4 between 3V3 and 5V; socket 3's translators (U8 for
-SPI/CS/RST, U9 for INT) run off VLS3. The Two-Wire ETH Click is a 3.3 V board.
-If SEL3 is on 5V, the translators drive 5 V into the LAN8651's 3.3 V I/O.
+**Expect the IRQ_N power-ordering trap** if the shield powers the click from its
+own USB-C ahead of the STM32 booting.
 
 **Do not drive RST low for long periods.** MikroE's pinout table labels the
-click's RST pin "Reset / ID SEL". A multi-millisecond assertion may latch the
+click's RST pin "Reset / ID SEL"; a multi-millisecond assertion may latch the
 chip into a different configuration at reset release.
-
-The same click board works perfectly on direct jumpers using the **identical
-pinout**, so both the click board and the devicetree are fine. Whatever is wrong
-is in the shield's signal path.
-
-**Expect the IRQ_N power-ordering trap to reappear.** With direct jumpers the
-click is powered from the Nucleo's 3V3, so both come up together. A shield with
-its own USB-C can power the click first, which is exactly the case the driver
-mishandles.

@@ -24,18 +24,30 @@
  * Socket 3 is the only usable socket: sockets 1 and 2 put RST on CN11 pins 13
  * and 15, which are PA13/PA14 - SWDIO/SWCLK, wired to the onboard ST-LINK.
  *
- * STATUS: unproven. SPI through the shield's TXS0108E translators was
- * intermittent and eventually stopped responding altogether, on two separate
- * shields. The identical pinout works on direct jumper leads, so the click
- * board and this configuration are both fine - the fault is in the shield's
- * signal path. Before retrying:
+ * STATUS: working - but ONLY with the socket 3 logic-level switch set to 3V3.
  *
- *   - Verify the SEL3 logic-level switch is on 3V3, not 5V. Socket 3's
- *     translators (U8: SPI/CS/RST, U9: INT) run off VLS3, and the Two-Wire ETH
- *     Click is a 3.3V board.
- *   - Expect the IRQ_N power-ordering trap if the shield powers the click from
- *     its own USB-C ahead of the STM32 booting. See
- *     docs/direct-lan8651-stm32f439zi.md.
+ *   *** SET THE SOCKET 3 LEVEL SWITCH TO 3V3 BEFORE PLUGGING THE CLICK IN. ***
+ *
+ * The shield has one logic-level switch per socket, selecting VLS1..VLS4
+ * between 3V3 and 5V. Socket 3's translators - U8 (SPI/CS/RST) and U9 (INT) -
+ * take VLS3 as their VCCB. The Two-Wire ETH Click is a 3.3V board.
+ *
+ * Found the hard way: with the switch on 5V the translators drive 5V into the
+ * LAN8651's 3.3V I/O. SPI reads succeed intermittently, oa_tc6 reports
+ * "Header transmission error!", and the chip eventually stops responding
+ * entirely. Two different shields behaved identically, because both were at the
+ * default switch position. The same pinout on direct jumper leads always worked,
+ * since that path has no translators.
+ *
+ * To check: pull the click out, leave the shield powered, and measure DC volts
+ * from a socket 3 GND pin (mikroBUS pin 8 or 9) to a socket 3 signal pin
+ * (pin 2 RST or pin 3 CS). The translator's B-side pull-up sits at VCCB, so you
+ * read VLS3 directly - it must be ~3.3V, not ~5V.
+ *
+ * Also watch for:
+ *
+ *   - The IRQ_N power-ordering trap, if the shield powers the click from its own
+ *     USB-C ahead of the STM32 booting. See docs/direct-lan8651-stm32f439zi.md.
  *   - Do not drive RST low for long periods. MikroE's pinout table labels the
  *     click's RST pin "Reset / ID SEL"; a multi-millisecond assertion may latch
  *     the chip into a different configuration at reset release.
