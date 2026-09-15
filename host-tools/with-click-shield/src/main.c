@@ -13,6 +13,13 @@
 #include <zephyr/net/ethernet.h>
 #include <errno.h>
 
+#if DT_NODE_HAS_STATUS(DT_NODELABEL(can1), okay)
+#define HAS_CAN 1
+#include <zephyr/drivers/can.h>
+#else
+#define HAS_CAN 0
+#endif
+
 static struct net_mgmt_event_callback carrier_cb;
 
 static void carrier_event_handler(struct net_mgmt_event_callback *cb, uint64_t mgmt_event,
@@ -62,6 +69,78 @@ static void ipv4_event_handler(struct net_mgmt_event_callback *cb, uint64_t mgmt
 	}
 }
 
+#if HAS_CAN
+/* The CAN ID every bridged frame is sent with. Standard 11-bit. */
+#define BRIDGE_CAN_ID 0x123
+
+static const struct device *const can_dev = DEVICE_DT_GET(DT_NODELABEL(can1));
+static uint32_t can_tx_ok;
+static uint32_t can_tx_err;
+
+static int can_bridge_init(void)
+{
+	int ret;
+
+	if (!device_is_ready(can_dev)) {
+		printf("CAN: %s not ready\n", can_dev->name);
+		return -1;
+	}
+
+	/* Zephyr requires an explicit start; the controller comes up stopped. */
+	ret = can_start(can_dev);
+	if (ret < 0 && ret != -EALREADY) {
+		printf("CAN: start failed (%d)\n", ret);
+		return -1;
+	}
+
+	printf("CAN: %s started, bridging to ID 0x%03x\n", can_dev->name, BRIDGE_CAN_ID);
+	return 0;
+}
+
+/* Map one received Ethernet frame to one 8-byte CAN frame.
+ *
+ * Classic CAN carries 8 bytes, so the whole 64-byte Ethernet frame cannot be
+ * forwarded. We send what matters for the latency bench: the sequence number
+ * from the payload, plus the low 32 bits of the arrival cycle count.
+ *
+ * Layout (big-endian, so it reads naturally in candump):
+ *   [0..3] sequence number, taken from the first 4 payload bytes
+ *   [4..7] k_cycle_get_32() sampled when the frame was received
+ *
+ * can_send() is called with K_NO_WAIT and no callback: it hands the frame to a
+ * free TX mailbox and returns. Blocking here would put console-and-queue delay
+ * inside the very path being measured. If all three bxCAN mailboxes are busy it
+ * returns -EAGAIN, which is counted rather than retried - a retry would smear
+ * the timestamp.
+ */
+static void can_bridge_send(const uint8_t *buf, size_t len, uint32_t rx_cycles)
+{
+	struct can_frame frame = {
+		.id = BRIDGE_CAN_ID,
+		.dlc = 8,
+		.flags = 0,
+	};
+	uint32_t seq = 0;
+	int ret;
+
+	/* Payload starts after the 14-byte Ethernet header. */
+	if (len >= sizeof(struct net_eth_hdr) + sizeof(seq)) {
+		memcpy(&seq, buf + sizeof(struct net_eth_hdr), sizeof(seq));
+		seq = ntohl(seq);
+	}
+
+	sys_put_be32(seq, &frame.data[0]);
+	sys_put_be32(rx_cycles, &frame.data[4]);
+
+	ret = can_send(can_dev, &frame, K_NO_WAIT, NULL, NULL);
+	if (ret < 0) {
+		can_tx_err++;
+	} else {
+		can_tx_ok++;
+	}
+}
+#endif /* HAS_CAN */
+
 static uint32_t rx_frames;
 
 /* One line per received frame. Note the cost: printf() over the console UART is
@@ -82,11 +161,19 @@ static void rx_frame_report(const uint8_t *buf, size_t len)
 	}
 
 	printf("RX #%u: %02x:%02x:%02x:%02x:%02x:%02x -> %02x:%02x:%02x:%02x:%02x:%02x "
-	       "type=0x%04x len=%zu, Timestamp: %lld ms\n",
+	       "type=0x%04x len=%zu, Timestamp: %lld ms"
+#if HAS_CAN
+	       "  [CAN ok=%u err=%u]"
+#endif
+	       "\n",
 	       rx_frames, hdr->src.addr[0], hdr->src.addr[1], hdr->src.addr[2], hdr->src.addr[3],
 	       hdr->src.addr[4], hdr->src.addr[5], hdr->dst.addr[0], hdr->dst.addr[1],
 	       hdr->dst.addr[2], hdr->dst.addr[3], hdr->dst.addr[4], hdr->dst.addr[5],
-	       ntohs(hdr->type), len, k_uptime_get());
+	       ntohs(hdr->type), len, k_uptime_get()
+#if HAS_CAN
+	       , can_tx_ok, can_tx_err
+#endif
+	);
 }
 
 /* Raw AF_PACKET socket bound to the interface.
@@ -224,6 +311,10 @@ int main(void)
 		       mac[0], mac[1], mac[2], mac[3], mac[4], mac[5]);
 	}
 
+#if HAS_CAN
+	can_bridge_init();
+#endif
+
 	int sock = rx_socket_open(iface);
 
 	if (sock < 0) {
@@ -249,8 +340,17 @@ int main(void)
 
 			if (zsock_poll(&fds, 1, 500) > 0) {
 				int n = zsock_recv(sock, rx_buf, sizeof(rx_buf), 0);
+				__maybe_unused uint32_t rx_cycles = k_cycle_get_32();
 
 				if (n > 0) {
+#if HAS_CAN
+					/* Bridge first, print second. printf() over
+					 * the UART takes milliseconds - putting it
+					 * ahead of can_send() would dominate the
+					 * Ethernet-to-CAN latency being measured.
+					 */
+					can_bridge_send(rx_buf, (size_t)n, rx_cycles);
+#endif
 					rx_frame_report(rx_buf, (size_t)n);
 				} else if (n < 0) {
 					printf("RX socket: recv error, errno %d\n", errno);

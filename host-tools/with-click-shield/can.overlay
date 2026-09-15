@@ -1,0 +1,41 @@
+/*
+ * CAN1 on the STM32F439ZI's on-chip bxCAN controller, for bridging received
+ * 10BASE-T1S frames out onto CAN.
+ *
+ *   west build -b nucleo_f439zi -p always . -DEXTRA_DTC_OVERLAY_FILE=can.overlay
+ *
+ * Stackable with the wiring overlays, semicolon-separated:
+ *   -DEXTRA_DTC_OVERLAY_FILE="click-shield.overlay;can.overlay"
+ *
+ * WIRING - the STM32 has a CAN controller but NO transceiver. CAN is a
+ * differential bus, so a TJA1050 / SN65HVD230 / MCP2562-class transceiver must
+ * sit between these pins and the wire:
+ *
+ *   STM32 pin   Nucleo morpho   Transceiver
+ *   ---------   -------------   -----------
+ *   PD1 (TX)    CN11 pin 55     TXD / D
+ *   PD0 (RX)    CN11 pin 57     RXD / R
+ *   3V3         3V3             VCC   (check the module is 3.3V-tolerant)
+ *   GND         GND             GND
+ *
+ * PD0/PD1 were chosen because they clash with nothing else in this project.
+ * Avoid CAN2 on PB5/PB6: PB5 is the SPI MOSI line to the LAN8651.
+ *
+ * bxCAN on STM32F4 is classic CAN 2.0 only - 8-byte payloads, 1 Mbit/s max.
+ * There is no CAN FD on this part.
+ */
+
+&can1 {
+	pinctrl-0 = <&can1_rx_pd0 &can1_tx_pd1>;
+	pinctrl-names = "default";
+	bitrate = <500000>;
+	status = "okay";
+
+	/* Passive transceiver - no standby/enable line driven by the MCU. If
+	 * your module has an STB/EN pin, either strap it to the active level in
+	 * hardware or replace this with a "can-transceiver-gpio" phy node.
+	 */
+	can-transceiver {
+		max-bitrate = <1000000>;
+	};
+};
