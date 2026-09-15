@@ -1,0 +1,96 @@
+/*
+ * MikroE Click Shield for Nucleo-144, click board in socket 3.
+ *
+ *   west build -p always -b nucleo_f439zi -- -DDTC_OVERLAY_FILE=boards/nucleo144-click-shield-socket3.overlay
+ *
+ *   click mikroBUS pin          STM32
+ *   ------------------------  -----
+ *   4  SCK                     PD3
+ *   5  MISO (SDO)              PC2
+ *   6  MOSI (SDI)              PC3
+ *   3  CS                      PC9
+ *   15 INT (IRQ)               PD2
+ *   2  RST                     PC8
+ *   7  3.3V                     -
+ *   8  GND                      -
+ */
+
+ #include <zephyr/dt-bindings/gpio/gpio.h>
+
+&clk_hse {
+	status = "disabled";
+};
+
+&clk_hsi {
+	status = "okay";
+};
+
+&pll {
+	div-m = <8>;
+	mul-n = <168>;
+	div-p = <2>;
+	div-q = <7>;
+	clocks = <&clk_hsi>;
+	status = "okay";
+};
+&mac {
+	status = "disabled";
+};
+
+&mdio {
+	status = "disabled";
+};
+
+&eth_phy {
+	status = "disabled";
+};
+&spi2 {
+	status = "okay";
+	pinctrl-0 = <&spi2_sck_pd3 &spi2_miso_pc2 &spi2_mosi_pc3>;
+	pinctrl-names = "default";
+
+	cs-gpios = <&gpioc 9 GPIO_ACTIVE_LOW>;
+
+    eth0: lan865x@0 {
+		compatible = "microchip,lan865x";
+		status = "okay";
+		reg = <0>;
+		spi-cs-setup-delay-ns = <1000>;
+		phy-handle = <&phy_two_wire_eth_click>;
+
+		int-gpios = <&gpiod 2 GPIO_ACTIVE_LOW>;
+	    rst-gpios = <&gpioc 8 GPIO_ACTIVE_LOW>;
+
+		spi-max-frequency = <20000000>;
+
+		/* The LAN8651 has no MAC address in OTP, so without this
+		 * net_eth_mac_load() yields 00:00:00:00:00:00, net_if rejects it
+		 * ("Invalid MAC address for iface") and the interface stays down.
+		 *
+		 * Locally-administered address (bit 1 of the first octet set, bit 0
+		 * clear). Last octet matches plca-node-id so nodes stay easy to tell
+		 * apart in captures - give every other node on the bus its own.
+		 */
+		local-mac-address = [02 00 00 00 00 01];
+
+		mdio_two_wire_eth_click: lan865x_mdio {
+			compatible = "microchip,lan865x-mdio";
+			status = "okay";
+			#address-cells = <1>;
+			#size-cells = <0>;
+
+			phy_two_wire_eth_click: ethernet-phy@0 {
+				compatible = "microchip,t1s-phy";
+				reg = <0x0>;
+				status = "okay";
+
+				plca-enable;
+				plca-node-id = <1>;
+				plca-node-count = <4>;
+				plca-burst-count = <0x0>;
+				plca-burst-timer = <0x80>;
+				plca-to-timer = <0x20>;
+			};
+		};
+	};
+};
