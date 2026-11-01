@@ -430,7 +430,7 @@
 		(descr "Through hole straight pin header, 1x02, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x02 2.54mm single row")
 		(property "Reference" "J4"
-			(at 0 -2.38 0)
+			(at -3 2.5 0)
 			(layer "F.SilkS")
 			(uuid "8f0db9bc-7d09-49f9-baa3-2d6fd38eac3b")
 			(effects
@@ -1155,7 +1155,7 @@
 		(property "Reference" "R4"
 			(at -0.6 -2.9 0)
 			(layer "F.SilkS")
-			(uuid "3bb72a8a-9f0d-49ee-948f-c066ee49df01")
+			(uuid "2c1bae37-5472-4761-88ea-844224d01a81")
 			(effects
 				(font
 					(size 1 1)
@@ -1165,8 +1165,8 @@
 		)
 		(property "Value" "1k"
 			(at 0 1.65 90)
-			(layer "F.Fab")
-			(uuid "672f507a-e390-4662-ba43-0199a76f3732")
+			(layer "F.SilkS")
+			(uuid "9f600068-923b-4c33-8589-09ede7015de1")
 			(effects
 				(font
 					(size 1 1)
@@ -1178,7 +1178,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "4dffecf0-4b31-4914-b36a-cb1a1def117a")
+			(uuid "c62225b4-d73c-497d-bf40-27a8e2c8948d")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1189,7 +1189,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a50eb071-1e5f-42e5-8a4a-8d8619b7cc29")
+			(uuid "d8e92caa-4886-4bb0-b669-596cad5aaa37")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1323,7 +1323,7 @@
 		)
 		(property "Value" "120"
 			(at 0 1.65 90)
-			(layer "F.Fab")
+			(layer "F.SilkS")
 			(uuid "3e28af25-85a1-464f-82be-16cbb183212a")
 			(effects
 				(font
@@ -1469,7 +1469,7 @@
 		(descr "terminal block MaiXu MX126-5.0-03P, 3 pins, pitch 5mm, size 15.5x7.8mm, drill diameter 1.3mm, pad diameter 2.8mm, https://www.lcsc.com/datasheet/lcsc_datasheet_2309150913_MAX-MX126-5-0-03P-GN01-Cu-S-A_C5188435.pdf")
 		(tags "THT terminal block MaiXu MX126-5.0-03P pitch 5mm size 15.5x7.8mm drill 1.3mm pad 2.8mm")
 		(property "Reference" "J2"
-			(at 5 -2.6 0)
+			(at 10.6 3 0)
 			(layer "F.SilkS")
 			(uuid "bd22b7e5-40f1-408c-8743-84695e96e4b7")
 			(effects
@@ -1979,7 +1979,7 @@
 		)
 		(property "Value" "10k"
 			(at 0 1.65 270)
-			(layer "F.Fab")
+			(layer "F.SilkS")
 			(uuid "235b3dc6-448d-4474-8d70-2512e55e362b")
 			(effects
 				(font
@@ -2817,7 +2817,7 @@
 		(descr "terminal block MaiXu MX126-5.0-03P, 3 pins, pitch 5mm, size 15.5x7.8mm, drill diameter 1.3mm, pad diameter 2.8mm, https://www.lcsc.com/datasheet/lcsc_datasheet_2309150913_MAX-MX126-5-0-03P-GN01-Cu-S-A_C5188435.pdf")
 		(tags "THT terminal block MaiXu MX126-5.0-03P pitch 5mm size 15.5x7.8mm drill 1.3mm pad 2.8mm")
 		(property "Reference" "J1"
-			(at 5 -2.6 0)
+			(at 10.6 3 0)
 			(layer "F.SilkS")
 			(uuid "034be8fd-528e-4304-94b1-828f870da20f")
 			(effects
@@ -3317,7 +3317,7 @@
 		(property "Reference" "D3"
 			(at 0 3.1 0)
 			(layer "F.SilkS")
-			(uuid "9f0936ec-57a1-4eb7-9222-f6da966d8474")
+			(uuid "ce4dc15b-7575-4aaf-809c-32c7229616f0")
 			(effects
 				(font
 					(size 1 1)
@@ -3328,7 +3328,7 @@
 		(property "Value" "LED"
 			(at 0 1.65 270)
 			(layer "F.Fab")
-			(uuid "90a15be5-e9f6-4491-9f95-cc928d04bf74")
+			(uuid "5ca3f675-b683-4f20-826a-a1801f838ef0")
 			(effects
 				(font
 					(size 1 1)
@@ -3340,7 +3340,7 @@
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "94e9242f-6bce-4894-8470-461a9fdc3227")
+			(uuid "decab04a-bedc-4f96-b461-cc715a2e4f66")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3351,7 +3351,7 @@
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "0e148a4b-73a3-4557-b73a-4dd9bc4f21fc")
+			(uuid "04a6248f-0cf1-4974-895b-f823862ff275")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5326,7 +5326,7 @@
 		)
 		(property "Value" "120"
 			(at 0 1.65 90)
-			(layer "F.Fab")
+			(layer "F.SilkS")
 			(uuid "517723f4-e575-435f-a124-08dc8af93213")
 			(effects
 				(font
@@ -5957,7 +5957,7 @@
 		(descr "Through hole straight pin header, 1x02, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x02 2.54mm single row")
 		(property "Reference" "J6"
-			(at 0 -2.38 0)
+			(at -3 2 0)
 			(layer "F.SilkS")
 			(uuid "11fe7ca3-26cc-4f4b-b739-ad02323fc829")
 			(effects
@@ -8299,6 +8299,406 @@
 		(fill no)
 		(layer "Edge.Cuts")
 		(uuid "ed0af5d2-c93d-4d6a-bd66-293f05dabcdc")
+	)
+	(gr_text "CANH"
+		(at 33 132.4 0)
+		(layer "F.SilkS")
+		(uuid "ce8d1dcb-5bbd-4e80-878d-de8c121f78b7")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "CANL"
+		(at 38 132.4 0)
+		(layer "F.SilkS")
+		(uuid "8b230a44-0b38-47b1-9e62-2fd431872c97")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "CAN1"
+		(at 38 138.1 0)
+		(layer "F.SilkS")
+		(uuid "739244e9-1707-458e-b532-aebdc4a46d17")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "GND"
+		(at 43 132.4 0)
+		(layer "F.SilkS")
+		(uuid "037db2a3-8be8-43ae-92da-4988432c887a")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "3V3"
+		(at 46.8 78.3 0)
+		(layer "F.SilkS")
+		(uuid "c81ff74f-0885-41d8-87b4-86fb32eee343")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "GND"
+		(at 52 90 0)
+		(layer "F.SilkS")
+		(uuid "74e73621-b173-41bd-bee7-5925343e60b7")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "PWR"
+		(at 52.5 70.3 0)
+		(layer "F.SilkS")
+		(uuid "0ed1df4b-9140-4cdd-ae70-9edf1f287670")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "Research - Open1722 OSHW"
+		(at 55 103.5 0)
+		(layer "F.SilkS")
+		(uuid "2f615c47-6cb7-4901-9d6d-c51817aad182")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "Rev 1.0   2026-11"
+		(at 55 106.5 0)
+		(layer "F.SilkS")
+		(uuid "51f96466-214f-4be4-a223-3fd3b361da75")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "github.com/sripiranavany/can_t1s_latency_bench"
+		(at 55 109.5 0)
+		(layer "F.SilkS")
+		(uuid "9a7b7c39-50d3-442f-a60b-b22420a7bffd")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "CANH"
+		(at 63 132.4 0)
+		(layer "F.SilkS")
+		(uuid "917ce65a-172c-4e30-97c0-248d411bd51f")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "CANL"
+		(at 68 132.4 0)
+		(layer "F.SilkS")
+		(uuid "1ee2e0a0-557f-4a5a-9f1a-d16e98124f3e")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "CAN2"
+		(at 68 138.1 0)
+		(layer "F.SilkS")
+		(uuid "39fc8776-4acd-49c8-aa4f-342b3cd32e93")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "GND"
+		(at 73 132.4 0)
+		(layer "F.SilkS")
+		(uuid "0cf35f2d-256d-4039-8bcd-e1d810de5be8")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "PWM"
+		(at 59 54 90)
+		(layer "F.SilkS")
+		(uuid "f32e7f73-2376-44d5-846c-4622c7f988c8")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "AN"
+		(at 59 68.5 90)
+		(layer "F.SilkS")
+		(uuid "fbbbf5a4-adec-4290-9d78-241372684485")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "INT"
+		(at 61.54 54 90)
+		(layer "F.SilkS")
+		(uuid "4caf1db2-50f2-4283-83c6-f79abb91ccf8")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "RST"
+		(at 61.54 68.5 90)
+		(layer "F.SilkS")
+		(uuid "a49b2b16-252c-4873-b2b0-89eed56767ac")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "RX"
+		(at 64.08 54 90)
+		(layer "F.SilkS")
+		(uuid "35c4c470-2fb4-45fc-8e84-3e62adc26566")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "CS"
+		(at 64.08 68.5 90)
+		(layer "F.SilkS")
+		(uuid "6d3e97c2-c6bf-4223-acda-5e2ab8caa9a0")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "TX"
+		(at 66.62 54 90)
+		(layer "F.SilkS")
+		(uuid "ecf57e50-0a1c-4381-b718-db2335e050a8")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "SCK"
+		(at 66.62 68.5 90)
+		(layer "F.SilkS")
+		(uuid "08d620b5-71e2-4433-8f3d-11490edfb93e")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "SCL"
+		(at 69.16 54 90)
+		(layer "F.SilkS")
+		(uuid "2492f01b-5a67-4b0d-9cf5-2ab896ae3119")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "MISO"
+		(at 69.16 68.5 90)
+		(layer "F.SilkS")
+		(uuid "6f9072c3-6052-45f3-97f3-9a79565cdb87")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "SDA"
+		(at 71.7 54 90)
+		(layer "F.SilkS")
+		(uuid "445595bc-4011-4345-ae38-fafd70b94332")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "MOSI"
+		(at 71.7 68.5 90)
+		(layer "F.SilkS")
+		(uuid "c6f18728-d537-414a-95b3-a2b1db5f8181")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "5V"
+		(at 74.24 54 90)
+		(layer "F.SilkS")
+		(uuid "ea06d5e1-eb11-4f61-a5be-ec1fbdda9ab6")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "3V3"
+		(at 74.24 68.5 90)
+		(layer "F.SilkS")
+		(uuid "379aa6be-9ec9-4148-b969-01ff9472050e")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "GND"
+		(at 76.78 54 90)
+		(layer "F.SilkS")
+		(uuid "1e94e595-1670-4d90-859c-aefdeef7d992")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "GND"
+		(at 76.78 68.5 90)
+		(layer "F.SilkS")
+		(uuid "151d6ecd-024d-4b32-aab6-511a1e628eb6")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "Designed by Sripiranavan Yogarajah"
+		(at 55 100.5 0)
+		(layer "F.SilkS")
+		(uuid "36ab7f67-4d19-43b4-a367-09043862a22b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "CAN SPE CARRIER"
+		(at 55 96.5 0)
+		(layer "F.SilkS")
+		(uuid "b8c89f7c-bf2e-4d71-b86e-b9a464ef1c92")
+		(effects
+			(font
+				(size 1.6 1.6)
+				(thickness 0.25)
+			)
+		)
+	)
+	(gr_text "CAN1  TX: J7-55  RX: J7-57"
+		(at 46.5 70 0)
+		(layer "B.SilkS")
+		(uuid "4d4f1616-b27e-44c5-b26f-cc10e58bc259")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(gr_text "CAN2  TX: J8-17  RX: J8-29"
+		(at 46.5 73 0)
+		(layer "B.SilkS")
+		(uuid "527db5f9-f952-4b09-94cf-7588deaf5d93")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(gr_text "v1.0  2026-11"
+		(at 46.5 67 0)
+		(layer "B.SilkS")
+		(uuid "047440fd-1bdd-4eb1-b210-a668bce3d2f0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(gr_text "CAN SPE CARRIER"
+		(at 46.5 63 0)
+		(layer "B.SilkS")
+		(uuid "0c29f0d0-1ded-49a0-b768-6cc776e6e423")
+		(effects
+			(font
+				(size 1.6 1.6)
+				(thickness 0.25)
+			)
+			(justify mirror)
+		)
 	)
 	(segment
 		(start 88.04 50)
