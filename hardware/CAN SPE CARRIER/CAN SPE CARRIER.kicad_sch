@@ -4955,19 +4955,25 @@
 		)
 	)
 	(junction
-		(at 156.21 31.75)
+		(at 54.61 30.48)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "0d37f6b5-604b-41fe-a68b-c3250eba99f6")
+		(uuid "09bf4c3b-480f-4373-af74-8abcaa8b1194")
 	)
 	(junction
-		(at 162.56 35.56)
+		(at 46.99 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "302286bb-a1d1-4327-8c08-ef549713bc14")
+		(uuid "4837eeb4-4226-47f2-b2ac-4ffc356ed8db")
 	)
 	(junction
-		(at 111.76 62.23)
+		(at 92.71 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "499f91f3-060f-4f76-af0c-7e9ab78cb7fd")
+	)
+	(junction
+		(at 113.03 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4a3ceac2-2cde-4bff-af91-aa3d17a02129")
@@ -4979,10 +4985,22 @@
 		(uuid "539d984a-a134-4d3b-ab08-b69ce1838295")
 	)
 	(junction
-		(at 73.66 44.45)
+		(at 74.93 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5aafaa2d-39de-47e7-a986-7e9f297215fa")
+	)
+	(junction
+		(at 92.71 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "60648d71-70ae-4f24-9b47-f0f4aab919f7")
+	)
+	(junction
+		(at 156.21 31.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "69aca2e4-a4f0-4af1-b628-48399a548b7d")
 	)
 	(junction
 		(at 162.56 31.75)
@@ -4991,16 +5009,34 @@
 		(uuid "76d5f766-4b20-4d23-8e60-76c56c4f7bdb")
 	)
 	(junction
-		(at 66.04 69.85)
+		(at 163.83 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "87aed54f-13d8-4524-ac4f-43dc1e63ba26")
+	)
+	(junction
+		(at 157.48 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8a265b95-f08e-4c8e-940e-44f6ae2bc8b2")
+	)
+	(junction
+		(at 67.31 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c422c1dd-1308-4877-81d3-7c9ed5b6bf4f")
 	)
 	(junction
-		(at 111.76 57.15)
+		(at 113.03 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c56300f7-11a2-4390-8606-56f8481340fb")
+	)
+	(junction
+		(at 163.83 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f807946f-2a5c-47b8-87de-f7a8b90c2128")
 	)
 	(no_connect
 		(at 267.97 86.36)
@@ -5043,7 +5079,7 @@
 		(uuid "1fa3de0f-249c-4545-963b-e61f192f4493")
 	)
 	(no_connect
-		(at 52.07 82.55)
+		(at 53.34 111.76)
 		(uuid "2189fb27-d2cf-4e46-9990-e84d41cecc39")
 	)
 	(no_connect
@@ -5211,7 +5247,7 @@
 		(uuid "6c5a8c03-0d16-4141-a270-4639e0b3f2e6")
 	)
 	(no_connect
-		(at 81.28 87.63)
+		(at 82.55 116.84)
 		(uuid "70d5a4b2-fd4e-4155-a9bf-8b21c121d20e")
 	)
 	(no_connect
@@ -5287,7 +5323,7 @@
 		(uuid "817eba88-da53-48e3-8864-d770ce36a70a")
 	)
 	(no_connect
-		(at 81.28 90.17)
+		(at 82.55 119.38)
 		(uuid "87f85f6a-6e9b-4f88-a75f-71df6476c6ef")
 	)
 	(no_connect
@@ -5317,10 +5353,6 @@
 	(no_connect
 		(at 233.68 111.76)
 		(uuid "906d788b-2916-4762-981b-4572fa0816bf")
-	)
-	(no_connect
-		(at 255.27 55.88)
-		(uuid "910d8aa8-622a-4dbc-9fe9-866d695195f7")
 	)
 	(no_connect
 		(at 220.98 73.66)
@@ -5387,7 +5419,7 @@
 		(uuid "b4599d9d-9974-4052-82fa-ec31869ca8e1")
 	)
 	(no_connect
-		(at 81.28 82.55)
+		(at 82.55 111.76)
 		(uuid "b5afcb25-7589-4d02-b41f-a9cf2fc9b158")
 	)
 	(no_connect
@@ -5459,10 +5491,6 @@
 		(uuid "e0057a9e-1e21-4bf9-a3fc-0e6e92bc5ded")
 	)
 	(no_connect
-		(at 255.27 71.12)
-		(uuid "e146ea00-cc85-4410-ac08-7725159fe1e4")
-	)
-	(no_connect
 		(at 267.97 104.14)
 		(uuid "e511d4b3-faee-480f-b7c0-8ea7586747ed")
 	)
@@ -5520,6 +5548,16 @@
 	)
 	(wire
 		(pts
+			(xy 101.6 34.29) (xy 101.6 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02d4c2cb-83c7-4f26-9bdb-1ed7569833bf")
+	)
+	(wire
+		(pts
 			(xy 151.13 31.75) (xy 156.21 31.75)
 		)
 		(stroke
@@ -5530,7 +5568,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 60.96) (xy 66.04 69.85)
+			(xy 67.31 90.17) (xy 67.31 99.06)
 		)
 		(stroke
 			(width 0)
@@ -5540,7 +5578,17 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 31.75) (xy 156.21 50.8)
+			(xy 101.6 46.99) (xy 92.71 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15d25b05-4d1f-42bb-b989-83cc1fb5efec")
+	)
+	(wire
+		(pts
+			(xy 157.48 31.75) (xy 157.48 36.83)
 		)
 		(stroke
 			(width 0)
@@ -5550,7 +5598,17 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 60.96) (xy 111.76 62.23)
+			(xy 87.63 48.26) (xy 92.71 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "164fc2a8-f60a-436e-8f1d-09516e77e219")
+	)
+	(wire
+		(pts
+			(xy 113.03 90.17) (xy 113.03 91.44)
 		)
 		(stroke
 			(width 0)
@@ -5560,13 +5618,53 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 48.26) (xy 120.65 50.8)
+			(xy 121.92 77.47) (xy 121.92 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "168e4efc-fc24-4bf4-81b5-112463805bc8")
+	)
+	(wire
+		(pts
+			(xy 137.16 39.37) (xy 163.83 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "175b5b26-4ea5-44d8-98f7-632895acec79")
+	)
+	(wire
+		(pts
+			(xy 46.99 55.88) (xy 92.71 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c8e622e-8b3a-4dc4-bef7-e0f072906894")
+	)
+	(wire
+		(pts
+			(xy 87.63 43.18) (xy 92.71 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b361fcd-74c0-427b-a2a5-0d7312712712")
+	)
+	(wire
+		(pts
+			(xy 22.86 46.99) (xy 22.86 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3208e8e4-5a67-4070-a58f-79df4f333568")
 	)
 	(wire
 		(pts
@@ -5580,7 +5678,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 58.42) (xy 111.76 57.15)
+			(xy 113.03 87.63) (xy 113.03 86.36)
 		)
 		(stroke
 			(width 0)
@@ -5590,7 +5688,17 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 100.33) (xy 111.76 97.79)
+			(xy 25.4 30.48) (xy 54.61 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40e03f61-d8c2-480e-9b9c-9842b9f80207")
+	)
+	(wire
+		(pts
+			(xy 113.03 129.54) (xy 113.03 127)
 		)
 		(stroke
 			(width 0)
@@ -5600,7 +5708,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 44.45) (xy 44.45 58.42)
+			(xy 45.72 73.66) (xy 45.72 87.63)
 		)
 		(stroke
 			(width 0)
@@ -5610,7 +5718,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 60.96) (xy 111.76 60.96)
+			(xy 121.92 90.17) (xy 113.03 90.17)
 		)
 		(stroke
 			(width 0)
@@ -5620,13 +5728,33 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 58.42) (xy 111.76 58.42)
+			(xy 22.86 46.99) (xy 25.4 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4dcf2a6a-3661-40da-8a2d-64e8323c8e2e")
+	)
+	(wire
+		(pts
+			(xy 121.92 87.63) (xy 113.03 87.63)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "4e21a74b-50de-4d56-ad1a-6cbfb92c3e9d")
+	)
+	(wire
+		(pts
+			(xy 25.4 30.48) (xy 25.4 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f108aa9-c6ca-4d02-bdea-acf46fceb05b")
 	)
 	(wire
 		(pts
@@ -5660,7 +5788,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 57.15) (xy 111.76 44.45)
+			(xy 113.03 86.36) (xy 113.03 73.66)
 		)
 		(stroke
 			(width 0)
@@ -5670,7 +5798,17 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 44.45) (xy 73.66 58.42)
+			(xy 22.86 55.88) (xy 46.99 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60bb15e0-cad7-4d74-aa95-7a11096dbf4c")
+	)
+	(wire
+		(pts
+			(xy 74.93 73.66) (xy 74.93 87.63)
 		)
 		(stroke
 			(width 0)
@@ -5690,7 +5828,27 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 44.45) (xy 111.76 44.45)
+			(xy 46.99 46.99) (xy 46.99 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "765eea36-35bd-4640-9404-79de673090ea")
+	)
+	(wire
+		(pts
+			(xy 92.71 48.26) (xy 92.71 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b260a50-8666-4414-8f1a-1edf380441e5")
+	)
+	(wire
+		(pts
+			(xy 74.93 73.66) (xy 113.03 73.66)
 		)
 		(stroke
 			(width 0)
@@ -5710,7 +5868,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 57.15) (xy 111.76 57.15)
+			(xy 107.95 86.36) (xy 113.03 86.36)
 		)
 		(stroke
 			(width 0)
@@ -5730,7 +5888,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 62.23) (xy 111.76 62.23)
+			(xy 107.95 91.44) (xy 113.03 91.44)
 		)
 		(stroke
 			(width 0)
@@ -5750,6 +5908,16 @@
 	)
 	(wire
 		(pts
+			(xy 137.16 36.83) (xy 157.48 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9be7580b-9e17-4243-8b97-4d5a4fb067d0")
+	)
+	(wire
+		(pts
 			(xy 172.72 52.07) (xy 193.04 52.07)
 		)
 		(stroke
@@ -5760,7 +5928,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 35.56) (xy 172.72 35.56)
+			(xy 162.56 35.56) (xy 163.83 35.56)
 		)
 		(stroke
 			(width 0)
@@ -5770,7 +5938,17 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 69.85) (xy 66.04 69.85)
+			(xy 157.48 36.83) (xy 157.48 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9c89759-ecc6-4a71-b18e-188fc7b4cb0f")
+	)
+	(wire
+		(pts
+			(xy 43.18 99.06) (xy 67.31 99.06)
 		)
 		(stroke
 			(width 0)
@@ -5780,7 +5958,17 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 44.45) (xy 73.66 44.45)
+			(xy 101.6 44.45) (xy 92.71 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aded8d47-f041-438e-a909-eb184a5f5eb2")
+	)
+	(wire
+		(pts
+			(xy 45.72 73.66) (xy 74.93 73.66)
 		)
 		(stroke
 			(width 0)
@@ -5800,6 +5988,36 @@
 	)
 	(wire
 		(pts
+			(xy 157.48 31.75) (xy 156.21 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b217f6c3-920b-47fb-9013-fbd6a7e82538")
+	)
+	(wire
+		(pts
+			(xy 163.83 39.37) (xy 163.83 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2909443-5edf-4fcd-8229-c6c04f77953c")
+	)
+	(wire
+		(pts
+			(xy 163.83 35.56) (xy 172.72 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5f784c3-5b31-4e1f-8621-68921c1b70e3")
+	)
+	(wire
+		(pts
 			(xy 172.72 52.07) (xy 172.72 50.8)
 		)
 		(stroke
@@ -5810,7 +6028,17 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 69.85) (xy 111.76 69.85)
+			(xy 54.61 30.48) (xy 92.71 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c099f83d-c4cd-4e53-b384-9500e8e64307")
+	)
+	(wire
+		(pts
+			(xy 67.31 99.06) (xy 113.03 99.06)
 		)
 		(stroke
 			(width 0)
@@ -5820,7 +6048,17 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 35.56) (xy 162.56 53.34)
+			(xy 92.71 44.45) (xy 92.71 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8391cd5-a7c5-438b-941e-8f157e8934f1")
+	)
+	(wire
+		(pts
+			(xy 163.83 35.56) (xy 163.83 39.37)
 		)
 		(stroke
 			(width 0)
@@ -5830,7 +6068,7 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 53.34) (xy 162.56 53.34)
+			(xy 157.48 82.55) (xy 163.83 82.55)
 		)
 		(stroke
 			(width 0)
@@ -5840,13 +6078,23 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 60.96) (xy 44.45 60.96)
+			(xy 43.18 90.17) (xy 45.72 90.17)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "d7257f10-6bd2-42d5-b0da-b0213eb72033")
+	)
+	(wire
+		(pts
+			(xy 92.71 46.99) (xy 92.71 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7957f06-e952-43f8-ba6f-dfcbc6367d04")
 	)
 	(wire
 		(pts
@@ -5860,7 +6108,7 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 60.96) (xy 41.91 69.85)
+			(xy 43.18 90.17) (xy 43.18 99.06)
 		)
 		(stroke
 			(width 0)
@@ -5870,7 +6118,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 62.23) (xy 111.76 69.85)
+			(xy 113.03 91.44) (xy 113.03 99.06)
 		)
 		(stroke
 			(width 0)
@@ -5878,8 +6126,28 @@
 		)
 		(uuid "e899e21f-3205-4472-a959-13393363d666")
 	)
+	(wire
+		(pts
+			(xy 54.61 30.48) (xy 54.61 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "efe28556-30bb-406f-9c68-2984675636ec")
+	)
+	(wire
+		(pts
+			(xy 92.71 43.18) (xy 92.71 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6659232-34c7-4157-b079-0ebd834ce22b")
+	)
 	(label "MB_SDA"
-		(at 81.28 95.25 0)
+		(at 82.55 124.46 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5889,7 +6157,7 @@
 		(uuid "07bbf203-6246-4e00-8f64-0c89cb447de0")
 	)
 	(label "SPI_CS"
-		(at 111.76 100.33 0)
+		(at 113.03 129.54 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5898,8 +6166,8 @@
 		)
 		(uuid "17cfa7a7-bf51-4e2a-b28d-5e7fdb0fadba")
 	)
-	(label "CAN_RX"
-		(at 156.21 55.88 0)
+	(label "CAN1_RX"
+		(at 157.48 85.09 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5909,7 +6177,7 @@
 		(uuid "17f601a6-5cf7-4f4c-9cff-dffb66a3b48a")
 	)
 	(label "GND"
-		(at 81.28 100.33 0)
+		(at 82.55 129.54 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5919,7 +6187,7 @@
 		(uuid "1a060c40-44df-4dcd-bb52-9060d7ea4b49")
 	)
 	(label "SPI_SCK"
-		(at 52.07 90.17 180)
+		(at 53.34 119.38 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5949,7 +6217,7 @@
 		(uuid "4568a7c8-5a3b-42f2-aa49-91049d2558ce")
 	)
 	(label "+5V"
-		(at 81.28 97.79 0)
+		(at 82.55 127 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5968,6 +6236,16 @@
 		)
 		(uuid "4d1bb30d-fcaf-43d8-92e1-f0f266ab21c4")
 	)
+	(label "CAN2_TX"
+		(at 101.6 39.37 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "511f75df-9b75-4da8-a5fe-743097e20729")
+	)
 	(label "SPI_MISO"
 		(at 233.68 35.56 0)
 		(effects
@@ -5979,7 +6257,7 @@
 		(uuid "5ab32699-8c55-449b-8532-8a4dd44063a1")
 	)
 	(label "SPI_CS"
-		(at 52.07 87.63 180)
+		(at 53.34 116.84 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6008,7 +6286,7 @@
 		)
 		(uuid "6dd319e2-260a-4aca-8e5f-a6cc0933a1c2")
 	)
-	(label "CAN_RX"
+	(label "CAN1_RX"
 		(at 220.98 106.68 180)
 		(effects
 			(font
@@ -6048,8 +6326,18 @@
 		)
 		(uuid "92aacd67-af87-4d6f-89da-951cba6820be")
 	)
+	(label "CAN2_RX"
+		(at 255.27 71.12 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "97595ab5-b308-4dee-9712-b19489c26a63")
+	)
 	(label "GND"
-		(at 52.07 100.33 180)
+		(at 53.34 129.54 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6057,6 +6345,16 @@
 			(justify right bottom)
 		)
 		(uuid "98627441-2da9-4531-aff0-afe0e4db1535")
+	)
+	(label "CAN2_TX"
+		(at 255.27 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9c66a0e1-6630-450e-806b-ab32252f9a0e")
 	)
 	(label "MB_INT"
 		(at 267.97 35.56 0)
@@ -6068,7 +6366,7 @@
 		)
 		(uuid "a2604463-2ab7-44dd-8502-c08ada2a0771")
 	)
-	(label "CAN_TX"
+	(label "CAN1_TX"
 		(at 220.98 104.14 180)
 		(effects
 			(font
@@ -6079,7 +6377,7 @@
 		(uuid "a27973ea-fd3a-4c38-a0e4-8ba7d4c977af")
 	)
 	(label "MB_INT"
-		(at 81.28 85.09 0)
+		(at 82.55 114.3 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6099,7 +6397,7 @@
 		(uuid "b6bf146f-9764-4c31-a9fd-c8f5672c2fbc")
 	)
 	(label "MB_SCL"
-		(at 81.28 92.71 0)
+		(at 82.55 121.92 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6109,7 +6407,7 @@
 		(uuid "c63b52e5-26a6-4ba2-941a-84544d20e273")
 	)
 	(label "SPI_MOSI"
-		(at 52.07 95.25 180)
+		(at 53.34 124.46 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6119,7 +6417,7 @@
 		(uuid "ddbfbfcc-8a12-4103-806a-6bc41cc7b912")
 	)
 	(label "SPI_MISO"
-		(at 52.07 92.71 180)
+		(at 53.34 121.92 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6138,8 +6436,18 @@
 		)
 		(uuid "ecf5d634-7bb5-49e4-a899-c80265f09036")
 	)
+	(label "CAN2_RX"
+		(at 137.16 41.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f1ff7dff-4d72-43f8-9b22-7bd155c49909")
+	)
 	(label "MB_RST"
-		(at 52.07 85.09 180)
+		(at 53.34 114.3 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6149,7 +6457,7 @@
 		(uuid "f43bd601-96f3-416f-9f74-913a54a084b4")
 	)
 	(label "+3V3"
-		(at 52.07 97.79 180)
+		(at 53.34 127 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6158,8 +6466,8 @@
 		)
 		(uuid "f6dd9929-1b54-4c8b-a6ee-7d441a0e161a")
 	)
-	(label "CAN_TX"
-		(at 120.65 53.34 180)
+	(label "CAN1_TX"
+		(at 121.92 82.55 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6190,7 +6498,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "033d1eac-6a2d-4d27-8812-5e13de1e7750")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR018"
 			(at 167.64 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -6250,15 +6558,15 @@
 		(instances
 			(project "CAN SPE CARRIER"
 				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
-					(reference "#PWR011")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 139.7 78.74 180)
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 59.69 44.45 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6266,32 +6574,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0a7b7565-ccd5-4d54-9de7-45d0dd26d69a")
-		(property "Reference" "TP1"
-			(at 142.24 80.7719 0)
+		(uuid "0760bb45-5412-4856-becf-fae5b683c87f")
+		(property "Reference" "J4"
+			(at 55.88 37.846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Value" "TestPoint"
-			(at 142.24 83.3119 0)
+		(property "Value" "Conn_01x02"
+			(at 55.88 40.386 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
-			(at 134.62 78.74 0)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 59.69 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6302,7 +6609,89 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 134.62 78.74 0)
+			(at 59.69 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 59.69 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "7eff01f5-8891-4103-b3a2-da1d4fa0828c")
+		)
+		(pin "1"
+			(uuid "e92030f8-f963-42a8-89e7-ce1343dff6e0")
+		)
+		(instances
+			(project "CAN SPE CARRIER"
+				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 140.97 107.95 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0a7b7565-ccd5-4d54-9de7-45d0dd26d69a")
+		(property "Reference" "TP1"
+			(at 143.51 109.9819 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 143.51 112.5219 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 135.89 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 135.89 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6313,7 +6702,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 139.7 78.74 0)
+			(at 140.97 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6347,7 +6736,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0beda769-d7f9-4577-8354-c246f6a794f0")
-		(property "Reference" "J5"
+		(property "Reference" "J7"
 			(at 227.33 29.21 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6613,7 +7002,7 @@
 		(instances
 			(project "CAN SPE CARRIER"
 				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
-					(reference "J5")
+					(reference "J7")
 					(unit 1)
 				)
 			)
@@ -6621,7 +7010,7 @@
 	)
 	(symbol
 		(lib_id "PESD2CAN:PESD2CAN")
-		(at 96.52 59.69 180)
+		(at 97.79 88.9 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6632,7 +7021,7 @@
 		(fields_autoplaced yes)
 		(uuid "0f507217-8c48-4b98-a1f9-2ae79325a2cd")
 		(property "Reference" "D2"
-			(at 96.52 49.53 0)
+			(at 97.79 78.74 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6642,7 +7031,7 @@
 			)
 		)
 		(property "Value" "PESD2CAN"
-			(at 96.52 52.07 0)
+			(at 97.79 81.28 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6652,7 +7041,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 96.52 59.69 0)
+			(at 97.79 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6664,7 +7053,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 96.52 59.69 0)
+			(at 97.79 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6675,7 +7064,7 @@
 			)
 		)
 		(property "Description" "41V Clamp 5A (8/20µs) Ipp Tvs Diode Surface Mount TO-236AB"
-			(at 96.52 59.69 0)
+			(at 97.79 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6687,7 +7076,7 @@
 			)
 		)
 		(property "MF" "NXP Semiconductors"
-			(at 96.52 59.69 0)
+			(at 97.79 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6699,7 +7088,7 @@
 			)
 		)
 		(property "Package" "SC-59 NXP Semiconductors"
-			(at 96.52 59.69 0)
+			(at 97.79 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6711,7 +7100,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 96.52 59.69 0)
+			(at 97.79 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6723,7 +7112,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/PESD2CAN/NXP+Semiconductors/view-part/?ref=eda"
-			(at 96.52 59.69 0)
+			(at 97.79 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6735,7 +7124,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/PESD2CAN/NXP+Semiconductors/view-part/?ref=snap"
-			(at 96.52 59.69 0)
+			(at 97.79 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6747,7 +7136,7 @@
 			)
 		)
 		(property "MP" "PESD2CAN"
-			(at 96.52 59.69 0)
+			(at 97.79 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6759,7 +7148,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 96.52 59.69 0)
+			(at 97.79 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6771,7 +7160,7 @@
 			)
 		)
 		(property "MANUFACTURER" "NXP"
-			(at 96.52 59.69 0)
+			(at 97.79 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6880,7 +7269,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 44.45 63.5 0)
+		(at 45.72 92.71 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6891,7 +7280,7 @@
 		(fields_autoplaced yes)
 		(uuid "1ac0d714-adaf-42e0-a97c-19d7fec33832")
 		(property "Reference" "#PWR06"
-			(at 44.45 69.85 0)
+			(at 45.72 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6902,7 +7291,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 44.45 68.58 0)
+			(at 45.72 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6912,7 +7301,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 44.45 63.5 0)
+			(at 45.72 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6923,7 +7312,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 44.45 63.5 0)
+			(at 45.72 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6934,7 +7323,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 44.45 63.5 0)
+			(at 45.72 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6958,7 +7347,7 @@
 	)
 	(symbol
 		(lib_id "MCP2562FDT-H_SN:MCP2562FDT-H_SN")
-		(at 138.43 55.88 0)
+		(at 139.7 85.09 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6968,7 +7357,7 @@
 		(dnp no)
 		(uuid "236a5875-1906-4ab2-9861-42b91ea584ff")
 		(property "Reference" "U2"
-			(at 137.668 52.578 0)
+			(at 138.938 81.788 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6978,7 +7367,7 @@
 			)
 		)
 		(property "Value" "MCP2562FDT-H_SN"
-			(at 137.668 55.118 0)
+			(at 138.938 84.328 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6988,7 +7377,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 138.43 55.88 0)
+			(at 139.7 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7000,7 +7389,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 138.43 55.88 0)
+			(at 139.7 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7011,7 +7400,7 @@
 			)
 		)
 		(property "Description" "CAN Flexible Data Rate Transceiver | Microchip Technology Inc. MCP2562FDT-H/SN"
-			(at 138.43 55.88 0)
+			(at 139.7 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7023,7 +7412,7 @@
 			)
 		)
 		(property "MF" "Microchip Technology"
-			(at 138.43 55.88 0)
+			(at 139.7 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7035,7 +7424,7 @@
 			)
 		)
 		(property "Package" "SO-8 Microchip"
-			(at 138.43 55.88 0)
+			(at 139.7 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7047,7 +7436,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 138.43 55.88 0)
+			(at 139.7 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7059,7 +7448,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/MCP2562FDT-H/SN/Microchip+Technology/view-part/?ref=eda"
-			(at 138.43 55.88 0)
+			(at 139.7 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7071,7 +7460,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/MCP2562FDT-H/SN/Microchip+Technology/view-part/?ref=snap"
-			(at 138.43 55.88 0)
+			(at 139.7 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7083,7 +7472,7 @@
 			)
 		)
 		(property "MP" "MCP2562FDT-H/SN"
-			(at 138.43 55.88 0)
+			(at 139.7 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7095,7 +7484,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 138.43 55.88 0)
+			(at 139.7 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7107,7 +7496,7 @@
 			)
 		)
 		(property "MANUFACTURER" "Microchip"
-			(at 138.43 55.88 0)
+			(at 139.7 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7153,7 +7542,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 139.7 100.33 0)
+		(at 140.97 129.54 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7164,7 +7553,7 @@
 		(fields_autoplaced yes)
 		(uuid "25adba1f-1d9f-4408-8953-4a85763ca65a")
 		(property "Reference" "TP2"
-			(at 142.24 95.7579 0)
+			(at 143.51 124.9679 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7175,7 +7564,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 142.24 98.2979 0)
+			(at 143.51 127.5079 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7186,7 +7575,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
-			(at 144.78 100.33 0)
+			(at 146.05 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7197,7 +7586,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 144.78 100.33 0)
+			(at 146.05 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7208,7 +7597,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 139.7 100.33 0)
+			(at 140.97 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7231,8 +7620,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x02")
-		(at 78.74 58.42 0)
+		(lib_id "power:GND")
+		(at 16.51 76.2 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7240,31 +7629,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "2bf8998e-8a2b-47fd-bf26-de79cab6a89b")
-		(property "Reference" "J2"
-			(at 74.93 51.816 0)
+		(fields_autoplaced yes)
+		(uuid "28073c35-1834-4e51-bc16-4ae75cb5e8a0")
+		(property "Reference" "#PWR02"
+			(at 16.51 82.55 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "Conn_01x02"
-			(at 74.93 54.356 0)
+		(property "Value" "GND"
+			(at 16.51 81.28 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 78.74 58.42 0)
+		(property "Footprint" ""
+			(at 16.51 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7275,7 +7664,85 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 78.74 58.42 0)
+			(at 16.51 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 16.51 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5ae101bc-f5b7-440a-94d6-0c99abb0c3ef")
+		)
+		(instances
+			(project "CAN SPE CARRIER"
+				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 80.01 87.63 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2bf8998e-8a2b-47fd-bf26-de79cab6a89b")
+		(property "Reference" "J6"
+			(at 76.2 81.026 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 76.2 83.566 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 80.01 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 80.01 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7286,7 +7753,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 78.74 58.42 0)
+			(at 80.01 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7305,7 +7772,89 @@
 		(instances
 			(project "CAN SPE CARRIER"
 				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
-					(reference "J2")
+					(reference "J6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 16.51 72.39 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "33d9b6d2-c67d-4960-a6f4-ce5437df27ea")
+		(property "Reference" "C1"
+			(at 20.32 71.1199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 20.32 73.6599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 17.4752 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 16.51 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 16.51 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6b11755e-d368-43be-8796-b55231a22bfc")
+		)
+		(pin "2"
+			(uuid "dfecbbe6-05b0-4ffd-a361-b577f2fe45d0")
+		)
+		(instances
+			(project "CAN SPE CARRIER"
+				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -7323,7 +7872,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "36fb8ba1-d939-47fb-8b49-c55db5675092")
-		(property "Reference" "C4"
+		(property "Reference" "C6"
 			(at 191.77 97.7899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7387,7 +7936,7 @@
 		(instances
 			(project "CAN SPE CARRIER"
 				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
-					(reference "C4")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -7405,7 +7954,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "381edc5f-1251-405e-a757-bc81c82e621a")
-		(property "Reference" "C1"
+		(property "Reference" "C5"
 			(at 187.96 68.5799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7469,7 +8018,7 @@
 		(instances
 			(project "CAN SPE CARRIER"
 				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
-					(reference "C1")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -7487,7 +8036,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "38688bfd-3749-46b3-9aaa-87f66cc819e2")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR020"
 			(at 167.64 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -7547,7 +8096,7 @@
 		(instances
 			(project "CAN SPE CARRIER"
 				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
-					(reference "#PWR013")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -7565,7 +8114,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3a596ba9-6ace-45dd-9bd2-87e35c854359")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR024"
 			(at 187.96 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -7625,7 +8174,7 @@
 		(instances
 			(project "CAN SPE CARRIER"
 				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
-					(reference "#PWR014")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -7633,7 +8182,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 156.21 60.96 0)
+		(at 157.48 90.17 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7643,8 +8192,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3b200746-f002-4acf-9e73-3aa9c2d278ca")
-		(property "Reference" "#PWR010"
-			(at 156.21 67.31 0)
+		(property "Reference" "#PWR016"
+			(at 157.48 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7655,7 +8204,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 156.21 66.04 0)
+			(at 157.48 95.25 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7665,7 +8214,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 156.21 60.96 0)
+			(at 157.48 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7676,7 +8225,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 156.21 60.96 0)
+			(at 157.48 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7687,7 +8236,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 156.21 60.96 0)
+			(at 157.48 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7703,7 +8252,7 @@
 		(instances
 			(project "CAN SPE CARRIER"
 				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
-					(reference "#PWR010")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -7721,7 +8270,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4636dbd6-b650-475a-b270-196dec303c5c")
-		(property "Reference" "J6"
+		(property "Reference" "J8"
 			(at 261.62 29.21 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7987,7 +8536,7 @@
 		(instances
 			(project "CAN SPE CARRIER"
 				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
-					(reference "J6")
+					(reference "J8")
 					(unit 1)
 				)
 			)
@@ -8005,7 +8554,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4881d429-b1de-4646-8692-7c4b66a55344")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR021"
 			(at 167.64 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -8065,7 +8614,7 @@
 		(instances
 			(project "CAN SPE CARRIER"
 				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
-					(reference "#PWR015")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -8073,7 +8622,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 139.7 78.74 0)
+		(at 140.97 107.95 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8083,8 +8632,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4a406f60-1f9c-4223-a01a-5d948877c595")
-		(property "Reference" "#PWR017"
-			(at 139.7 82.55 0)
+		(property "Reference" "#PWR013"
+			(at 140.97 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8095,7 +8644,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 139.7 73.66 0)
+			(at 140.97 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8105,7 +8654,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 139.7 78.74 0)
+			(at 140.97 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8116,7 +8665,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 139.7 78.74 0)
+			(at 140.97 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8127,7 +8676,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 139.7 78.74 0)
+			(at 140.97 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8143,7 +8692,7 @@
 		(instances
 			(project "CAN SPE CARRIER"
 				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
-					(reference "#PWR017")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -8151,7 +8700,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 69.85 60.96 90)
+		(at 71.12 90.17 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8160,8 +8709,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "561b107b-fe1c-40a1-8921-b7065e8d3459")
-		(property "Reference" "R1"
-			(at 68.58 62.992 90)
+		(property "Reference" "R2"
+			(at 69.85 92.202 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8172,7 +8721,7 @@
 			)
 		)
 		(property "Value" "120"
-			(at 68.58 65.532 90)
+			(at 69.85 94.742 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8183,7 +8732,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 69.85 62.738 90)
+			(at 71.12 91.948 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8194,7 +8743,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 69.85 60.96 0)
+			(at 71.12 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8205,7 +8754,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 69.85 60.96 0)
+			(at 71.12 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8224,15 +8773,15 @@
 		(instances
 			(project "CAN SPE CARRIER"
 				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
-					(reference "R1")
+					(reference "R2")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 111.76 90.17 0)
+		(lib_id "power:GND")
+		(at 137.16 46.99 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8241,9 +8790,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "5aad4248-5b4f-48e2-9e95-4283adaad7fb")
-		(property "Reference" "#PWR04"
-			(at 111.76 93.98 0)
+		(uuid "56466bc8-0711-45c5-9681-bf5e22329403")
+		(property "Reference" "#PWR012"
+			(at 137.16 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8253,8 +8802,8 @@
 				)
 			)
 		)
-		(property "Value" "+3V3"
-			(at 111.76 85.09 0)
+		(property "Value" "GND"
+			(at 137.16 52.07 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8264,7 +8813,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 111.76 90.17 0)
+			(at 137.16 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8275,7 +8824,85 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 111.76 90.17 0)
+			(at 137.16 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 137.16 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3b235f19-94fa-4cbd-b04c-930c7ff5e246")
+		)
+		(instances
+			(project "CAN SPE CARRIER"
+				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
+					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 113.03 119.38 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5aad4248-5b4f-48e2-9e95-4283adaad7fb")
+		(property "Reference" "#PWR010"
+			(at 113.03 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 113.03 114.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 113.03 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 113.03 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8286,7 +8913,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 111.76 90.17 0)
+			(at 113.03 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8302,7 +8929,7 @@
 		(instances
 			(project "CAN SPE CARRIER"
 				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
-					(reference "#PWR04")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -8320,7 +8947,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5b8a2827-495e-44a8-84b5-58168ab69acc")
-		(property "Reference" "#FLG03"
+		(property "Reference" "#FLG01"
 			(at 151.13 19.685 0)
 			(hide yes)
 			(show_name no)
@@ -8380,7 +9007,7 @@
 		(instances
 			(project "CAN SPE CARRIER"
 				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
-					(reference "#FLG03")
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)
@@ -8398,7 +9025,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5f652733-ce39-47a8-8604-4f6d0106115a")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR015"
 			(at 156.21 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -8458,7 +9085,7 @@
 		(instances
 			(project "CAN SPE CARRIER"
 				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
-					(reference "#PWR01")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -8476,7 +9103,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6132fa7d-aa17-47e5-9ba8-b9ead0c2349a")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR022"
 			(at 184.15 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -8536,7 +9163,7 @@
 		(instances
 			(project "CAN SPE CARRIER"
 				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
-					(reference "#PWR012")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -8554,7 +9181,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "64184f8a-932c-45c2-85a8-2711dc6d8882")
-		(property "Reference" "D1"
+		(property "Reference" "D3"
 			(at 176.53 47.3074 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8629,7 +9256,7 @@
 		(instances
 			(project "CAN SPE CARRIER"
 				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
-					(reference "D1")
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -8647,7 +9274,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6d7e3418-253b-4c6b-92a6-118b597b6754")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR019"
 			(at 167.64 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -8707,7 +9334,7 @@
 		(instances
 			(project "CAN SPE CARRIER"
 				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
-					(reference "#PWR09")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -8715,7 +9342,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x08")
-		(at 76.2 90.17 0)
+		(at 77.47 119.38 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -8725,8 +9352,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6f5335b7-0e06-464a-b3cd-f4dd1a6fd411")
-		(property "Reference" "J4"
-			(at 76.2 106.68 0)
+		(property "Reference" "J5"
+			(at 77.47 135.89 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8736,7 +9363,7 @@
 			)
 		)
 		(property "Value" "Conn_01x08"
-			(at 76.2 104.14 0)
+			(at 77.47 133.35 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8746,7 +9373,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical"
-			(at 76.2 90.17 0)
+			(at 77.47 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8757,7 +9384,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 76.2 90.17 0)
+			(at 77.47 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8768,7 +9395,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 76.2 90.17 0)
+			(at 77.47 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8805,7 +9432,7 @@
 		(instances
 			(project "CAN SPE CARRIER"
 				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
-					(reference "J4")
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -8823,7 +9450,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "71d08fbf-0216-4544-95d8-33159fa73c01")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR017"
 			(at 162.56 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -8883,15 +9510,15 @@
 		(instances
 			(project "CAN SPE CARRIER"
 				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
-					(reference "#PWR02")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Connector:Screw_Terminal_01x03")
-		(at 49.53 60.96 0)
+		(lib_id "power:+5V")
+		(at 16.51 68.58 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8899,9 +9526,11 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "789ff5eb-b581-4cb6-8cfa-34b4c937144e")
-		(property "Reference" "J1"
-			(at 50.546 55.88 0)
+		(fields_autoplaced yes)
+		(uuid "732e0892-bc4a-4766-9c61-dbd86428aa58")
+		(property "Reference" "#PWR01"
+			(at 16.51 72.39 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8910,8 +9539,8 @@
 				)
 			)
 		)
-		(property "Value" "Screw_Terminal_01x03"
-			(at 55.626 53.848 0)
+		(property "Value" "+5V"
+			(at 16.51 63.5 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8920,8 +9549,8 @@
 				)
 			)
 		)
-		(property "Footprint" "TerminalBlock:TerminalBlock_MaiXu_MX126-5.0-03P_1x03_P5.00mm"
-			(at 49.53 60.96 0)
+		(property "Footprint" ""
+			(at 16.51 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8932,7 +9561,83 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 49.53 60.96 0)
+			(at 16.51 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 16.51 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0ad68730-a198-44e5-a20a-85f70b6af8de")
+		)
+		(instances
+			(project "CAN SPE CARRIER"
+				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Screw_Terminal_01x03")
+		(at 50.8 90.17 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "789ff5eb-b581-4cb6-8cfa-34b4c937144e")
+		(property "Reference" "J2"
+			(at 51.816 85.09 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Screw_Terminal_01x03"
+			(at 56.896 83.058 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TerminalBlock:TerminalBlock_MaiXu_MX126-5.0-03P_1x03_P5.00mm"
+			(at 50.8 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 50.8 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8943,7 +9648,7 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 49.53 60.96 0)
+			(at 50.8 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8965,7 +9670,244 @@
 		(instances
 			(project "CAN SPE CARRIER"
 				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
-					(reference "J1")
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 50.8 46.99 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7a2c7d2e-eaac-468d-b5ac-4dd5d5f78e41")
+		(property "Reference" "R1"
+			(at 49.53 49.022 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "120"
+			(at 49.53 51.562 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 50.8 48.768 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 50.8 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 50.8 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "676f2b38-84b8-44b4-b057-dbbe5b55cfcf")
+		)
+		(pin "1"
+			(uuid "46f93a01-f7ea-4db6-a1fe-b64737429c6b")
+		)
+		(instances
+			(project "CAN SPE CARRIER"
+				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 25.4 49.53 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7d10edcb-b52f-469e-93e4-bc722ea6a6cf")
+		(property "Reference" "#PWR03"
+			(at 25.4 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 25.4 54.61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 25.4 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 25.4 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 25.4 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0f62e71e-0283-4d25-b271-e4c66e5166fc")
+		)
+		(instances
+			(project "CAN SPE CARRIER"
+				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 67.31 45.72 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7e0e411f-1369-439d-825e-3e2b5dbd3f9e")
+		(property "Reference" "#PWR07"
+			(at 67.31 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 67.31 50.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 67.31 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 67.31 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 67.31 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "94c96b0f-4da7-4cd2-9128-9d32ea21cbc5")
+		)
+		(instances
+			(project "CAN SPE CARRIER"
+				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -8983,7 +9925,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "83691092-6a95-42f8-a708-9c862f03a5da")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR023"
 			(at 184.15 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -9043,7 +9985,7 @@
 		(instances
 			(project "CAN SPE CARRIER"
 				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
-					(reference "#PWR08")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -9061,7 +10003,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "893ca5fc-e1df-4676-98e3-b4a6762097a2")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR025"
 			(at 187.96 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -9121,7 +10063,7 @@
 		(instances
 			(project "CAN SPE CARRIER"
 				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
-					(reference "#PWR016")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -9139,7 +10081,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8b4239c6-c4c3-4e55-ae7c-ee991dce9e8f")
-		(property "Reference" "C2"
+		(property "Reference" "C3"
 			(at 171.45 68.5799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9203,15 +10145,15 @@
 		(instances
 			(project "CAN SPE CARRIER"
 				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
-					(reference "C2")
+					(reference "C3")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x08")
-		(at 57.15 90.17 0)
+		(lib_id "Device:C")
+		(at 33.02 72.39 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9219,9 +10161,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "92e8cc10-4147-4821-9481-26fb83c83a6c")
-		(property "Reference" "J3"
-			(at 57.15 106.68 0)
+		(fields_autoplaced yes)
+		(uuid "8fb5390d-c0ec-495c-b1db-2ce839516a1e")
+		(property "Reference" "C2"
+			(at 36.83 71.1199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9231,8 +10174,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Conn_01x08"
-			(at 54.102 103.886 0)
+		(property "Value" "100nF"
+			(at 36.83 73.6599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9242,8 +10185,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical"
-			(at 57.15 90.17 0)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 33.9852 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9254,7 +10197,166 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 57.15 90.17 0)
+			(at 33.02 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 33.02 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c161c72c-63cf-4fef-9470-55bb50bd92b9")
+		)
+		(pin "2"
+			(uuid "d6d7b97d-80b3-4b4f-bba8-2ffd7d4aadc6")
+		)
+		(instances
+			(project "CAN SPE CARRIER"
+				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 101.6 34.29 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8fe31d79-811f-46eb-9ca4-91adeec82ede")
+		(property "Reference" "#PWR09"
+			(at 101.6 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 101.6 29.21 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 101.6 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 101.6 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 101.6 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "21900ae4-b6a9-4e6c-b06f-e4b0ed7e01b0")
+		)
+		(instances
+			(project "CAN SPE CARRIER"
+				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
+					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x08")
+		(at 58.42 119.38 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "92e8cc10-4147-4821-9481-26fb83c83a6c")
+		(property "Reference" "J3"
+			(at 58.42 135.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x08"
+			(at 55.372 133.096 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical"
+			(at 58.42 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 58.42 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9265,7 +10367,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 57.15 90.17 0)
+			(at 58.42 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9309,8 +10411,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 139.7 100.33 0)
+		(lib_id "MCP2562FDT-H_SN:MCP2562FDT-H_SN")
+		(at 119.38 41.91 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9318,10 +10420,41 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9d7144b1-abd3-4fb3-a6c9-d8f81264830a")
-		(property "Reference" "#PWR018"
-			(at 139.7 106.68 0)
+		(uuid "94167ea8-bf97-4ea2-9db6-f02546e321c2")
+		(property "Reference" "U1"
+			(at 118.618 38.608 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MCP2562FDT-H_SN"
+			(at 118.618 41.148 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 119.38 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 119.38 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9331,8 +10464,160 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 139.7 105.41 0)
+		(property "Description" "CAN Flexible Data Rate Transceiver | Microchip Technology Inc. MCP2562FDT-H/SN"
+			(at 119.38 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MF" "Microchip Technology"
+			(at 119.38 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Package" "SO-8 Microchip"
+			(at 119.38 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Price" "None"
+			(at 119.38 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/MCP2562FDT-H/SN/Microchip+Technology/view-part/?ref=eda"
+			(at 119.38 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/MCP2562FDT-H/SN/Microchip+Technology/view-part/?ref=snap"
+			(at 119.38 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MP" "MCP2562FDT-H/SN"
+			(at 119.38 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 119.38 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MANUFACTURER" "Microchip"
+			(at 119.38 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(pin "1"
+			(uuid "72e2aca5-6f16-4be5-8df2-8936e85081f5")
+		)
+		(pin "8"
+			(uuid "61498506-03f5-4052-aa74-1160aae79ccb")
+		)
+		(pin "2"
+			(uuid "dc75c77c-cfc5-454c-bc4c-f8bf37dc0775")
+		)
+		(pin "5"
+			(uuid "d74fac5a-7d4d-42a5-a3db-7b8d92ad8c71")
+		)
+		(pin "4"
+			(uuid "d3e1b6e8-2784-4b69-b1ed-98a0481ad3b7")
+		)
+		(pin "3"
+			(uuid "56220cfb-f0cd-4043-aabf-dd910c2c9bdf")
+		)
+		(pin "6"
+			(uuid "fbe38ba3-b67c-4b1f-a651-11897f8b1188")
+		)
+		(pin "7"
+			(uuid "12c9a93c-331f-42bf-b91c-9a31e75f2e1a")
+		)
+		(instances
+			(project "CAN SPE CARRIER"
+				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Screw_Terminal_01x03")
+		(at 30.48 46.99 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "99892d15-f7ad-467c-9711-4cf08e772d4e")
+		(property "Reference" "J1"
+			(at 31.496 41.91 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9341,8 +10626,18 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 139.7 100.33 0)
+		(property "Value" "Screw_Terminal_01x03"
+			(at 36.576 39.878 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TerminalBlock:TerminalBlock_MaiXu_MX126-5.0-03P_1x03_P5.00mm"
+			(at 30.48 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9353,7 +10648,91 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 139.7 100.33 0)
+			(at 30.48 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic screw terminal, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 30.48 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "a24cba5c-8c69-4c47-a474-018906e4c824")
+		)
+		(pin "1"
+			(uuid "373efef1-0491-48ef-9ba6-c3d14a201923")
+		)
+		(pin "3"
+			(uuid "4703e38b-af7a-40f0-ba61-e22393ba2a57")
+		)
+		(instances
+			(project "CAN SPE CARRIER"
+				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 140.97 129.54 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9d7144b1-abd3-4fb3-a6c9-d8f81264830a")
+		(property "Reference" "#PWR014"
+			(at 140.97 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 140.97 134.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 140.97 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 140.97 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9364,7 +10743,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 139.7 100.33 0)
+			(at 140.97 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9380,7 +10759,7 @@
 		(instances
 			(project "CAN SPE CARRIER"
 				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
-					(reference "#PWR018")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -9398,7 +10777,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a908dd18-4a59-43ef-b808-c0f1de478906")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR026"
 			(at 193.04 25.4 0)
 			(hide yes)
 			(show_name no)
@@ -9458,7 +10837,7 @@
 		(instances
 			(project "CAN SPE CARRIER"
 				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
-					(reference "#PWR03")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -9466,7 +10845,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 120.65 48.26 180)
+		(at 33.02 76.2 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9475,9 +10854,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "c1c6c46f-e295-4e8a-a470-383c205f0f62")
-		(property "Reference" "#PWR07"
-			(at 120.65 41.91 0)
+		(uuid "b1cead02-5935-4e97-9fc3-d0e4c5abc8e9")
+		(property "Reference" "#PWR05"
+			(at 33.02 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9488,7 +10867,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 120.65 43.18 0)
+			(at 33.02 81.28 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9498,7 +10877,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 120.65 48.26 0)
+			(at 33.02 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9509,7 +10888,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 120.65 48.26 0)
+			(at 33.02 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9520,7 +10899,85 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 120.65 48.26 0)
+			(at 33.02 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d5bd0af6-4b95-46e6-b93c-04eed80daaa1")
+		)
+		(instances
+			(project "CAN SPE CARRIER"
+				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 121.92 77.47 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c1c6c46f-e295-4e8a-a470-383c205f0f62")
+		(property "Reference" "#PWR011"
+			(at 121.92 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 121.92 72.39 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 121.92 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 121.92 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9536,7 +10993,7 @@
 		(instances
 			(project "CAN SPE CARRIER"
 				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
-					(reference "#PWR07")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -9544,7 +11001,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 86.36 59.69 0)
+		(at 87.63 88.9 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9554,8 +11011,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c98ce9c8-18e6-4730-b58b-dd04ce277845")
-		(property "Reference" "#PWR05"
-			(at 86.36 66.04 0)
+		(property "Reference" "#PWR08"
+			(at 87.63 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9566,7 +11023,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 86.36 64.77 0)
+			(at 87.63 93.98 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9576,7 +11033,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 86.36 59.69 0)
+			(at 87.63 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9587,7 +11044,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 86.36 59.69 0)
+			(at 87.63 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9598,7 +11055,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 86.36 59.69 0)
+			(at 87.63 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9614,7 +11071,7 @@
 		(instances
 			(project "CAN SPE CARRIER"
 				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
-					(reference "#PWR05")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -9622,7 +11079,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 111.76 93.98 180)
+		(at 113.03 123.19 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9631,8 +11088,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "dbc5aead-346c-4650-acd6-f4876ce77a47")
-		(property "Reference" "R2"
-			(at 108.712 93.726 0)
+		(property "Reference" "R3"
+			(at 109.982 122.936 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9642,7 +11099,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 108.966 95.758 0)
+			(at 110.236 124.968 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9652,7 +11109,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 113.538 93.98 90)
+			(at 114.808 123.19 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9663,7 +11120,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 111.76 93.98 0)
+			(at 113.03 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9674,7 +11131,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 111.76 93.98 0)
+			(at 113.03 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9693,7 +11150,7 @@
 		(instances
 			(project "CAN SPE CARRIER"
 				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
-					(reference "R2")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -9711,7 +11168,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dde5d592-072b-4448-86e6-a1d706e40902")
-		(property "Reference" "R3"
+		(property "Reference" "R4"
 			(at 175.26 38.0999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9775,7 +11232,266 @@
 		(instances
 			(project "CAN SPE CARRIER"
 				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
-					(reference "R3")
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 33.02 68.58 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e23a8934-7e62-4221-8c58-79eed8b90fcf")
+		(property "Reference" "#PWR04"
+			(at 33.02 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 33.02 63.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 33.02 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 33.02 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 33.02 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c9caf60a-4322-4134-b6b6-6548772a03c6")
+		)
+		(instances
+			(project "CAN SPE CARRIER"
+				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PESD2CAN:PESD2CAN")
+		(at 77.47 45.72 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e54a1474-7598-4584-8043-8f0755120ee3")
+		(property "Reference" "D1"
+			(at 77.47 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PESD2CAN"
+			(at 77.47 38.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 77.47 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 77.47 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "41V Clamp 5A (8/20µs) Ipp Tvs Diode Surface Mount TO-236AB"
+			(at 77.47 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MF" "NXP Semiconductors"
+			(at 77.47 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Package" "SC-59 NXP Semiconductors"
+			(at 77.47 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Price" "None"
+			(at 77.47 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/PESD2CAN/NXP+Semiconductors/view-part/?ref=eda"
+			(at 77.47 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/PESD2CAN/NXP+Semiconductors/view-part/?ref=snap"
+			(at 77.47 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MP" "PESD2CAN"
+			(at 77.47 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 77.47 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MANUFACTURER" "NXP"
+			(at 77.47 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(pin "2"
+			(uuid "2658f92e-4ef5-4a45-8718-133140451d47")
+		)
+		(pin "1"
+			(uuid "1fce09d4-c7c8-4500-980a-0ed98f9f215d")
+		)
+		(pin "3"
+			(uuid "b0db7e9a-f577-40e8-a7e0-eb7d8571a902")
+		)
+		(instances
+			(project "CAN SPE CARRIER"
+				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -9793,7 +11509,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e6843127-241f-430d-a7e9-892adc9407ac")
-		(property "Reference" "#FLG01"
+		(property "Reference" "#FLG03"
 			(at 185.42 20.955 0)
 			(hide yes)
 			(show_name no)
@@ -9853,7 +11569,7 @@
 		(instances
 			(project "CAN SPE CARRIER"
 				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
-					(reference "#FLG01")
+					(reference "#FLG03")
 					(unit 1)
 				)
 			)
@@ -9871,7 +11587,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ecc7fb77-7b38-44be-8372-e308f96fbf6e")
-		(property "Reference" "C3"
+		(property "Reference" "C4"
 			(at 171.45 97.7899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9935,7 +11651,7 @@
 		(instances
 			(project "CAN SPE CARRIER"
 				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
-					(reference "C3")
+					(reference "C4")
 					(unit 1)
 				)
 			)
