@@ -1,0 +1,2 @@
+# Load board Kconfig descriptions.
+osource "/sripiranavan/installs/Embedded/RTOS/zephyrproject/zephyr/boards/st/nucleo_f439zi/Kconfig.nucleo_f439zi"

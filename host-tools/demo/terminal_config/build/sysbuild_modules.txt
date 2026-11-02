@@ -1,0 +1,1 @@
+"mcuboot":"/sripiranavan/installs/Embedded/RTOS/zephyrproject/bootloader/mcuboot":"/sripiranavan/installs/Embedded/RTOS/zephyrproject/bootloader/mcuboot/boot/zephyr/sysbuild"

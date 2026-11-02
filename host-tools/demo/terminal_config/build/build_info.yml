@@ -1,0 +1,62 @@
+cmake:
+  application:
+    configuration-dir: '/sripiranavan/development/germany/sm3/research/can_t1s_latency_bench/host-tools/demo/terminal_config'
+    source-dir: '/sripiranavan/development/germany/sm3/research/can_t1s_latency_bench/host-tools/demo/terminal_config'
+  board:
+    name: 'nucleo_f439zi'
+    path:
+     - '/sripiranavan/installs/Embedded/RTOS/zephyrproject/zephyr/boards/st/nucleo_f439zi'
+    qualifiers: 'stm32f439xx'
+    revision: ''
+  devicetree:
+    bindings-dirs:
+     - '/sripiranavan/installs/Embedded/RTOS/zephyrproject/zephyr/dts/bindings'
+    files:
+     - '/sripiranavan/installs/Embedded/RTOS/zephyrproject/zephyr/boards/st/nucleo_f439zi/nucleo_f439zi.dts'
+     - 'boards/nucleo_f439zi.overlay'
+    include-dirs:
+     - '/sripiranavan/installs/Embedded/RTOS/zephyrproject/modules/hal/ambiq/dts'
+     - '/sripiranavan/installs/Embedded/RTOS/zephyrproject/modules/hal/atmel/include'
+     - '/sripiranavan/installs/Embedded/RTOS/zephyrproject/modules/hal/bouffalolab/include'
+     - '/sripiranavan/installs/Embedded/RTOS/zephyrproject/modules/hal/bouffalolab/include/zephyr'
+     - '/sripiranavan/installs/Embedded/RTOS/zephyrproject/modules/hal/gigadevice/include'
+     - '/sripiranavan/installs/Embedded/RTOS/zephyrproject/modules/hal/infineon/dts'
+     - '/sripiranavan/installs/Embedded/RTOS/zephyrproject/modules/hal/microchip/include'
+     - '/sripiranavan/installs/Embedded/RTOS/zephyrproject/modules/hal/microchip/dts'
+     - '/sripiranavan/installs/Embedded/RTOS/zephyrproject/modules/hal/nuvoton/dts'
+     - '/sripiranavan/installs/Embedded/RTOS/zephyrproject/modules/hal/nxp/dts'
+     - '/sripiranavan/installs/Embedded/RTOS/zephyrproject/modules/hal/stm32/dts'
+     - '/sripiranavan/installs/Embedded/RTOS/zephyrproject/modules/hal/ti/dts'
+     - '/sripiranavan/installs/Embedded/RTOS/zephyrproject/zephyr/include'
+     - '/sripiranavan/installs/Embedded/RTOS/zephyrproject/zephyr/include/zephyr'
+     - '/sripiranavan/installs/Embedded/RTOS/zephyrproject/zephyr/dts/common'
+     - '/sripiranavan/installs/Embedded/RTOS/zephyrproject/zephyr/dts/vendor'
+     - '/sripiranavan/installs/Embedded/RTOS/zephyrproject/zephyr/dts/rx'
+     - '/sripiranavan/installs/Embedded/RTOS/zephyrproject/zephyr/dts/x86'
+     - '/sripiranavan/installs/Embedded/RTOS/zephyrproject/zephyr/dts/xtensa'
+     - '/sripiranavan/installs/Embedded/RTOS/zephyrproject/zephyr/dts/sparc'
+     - '/sripiranavan/installs/Embedded/RTOS/zephyrproject/zephyr/dts/riscv'
+     - '/sripiranavan/installs/Embedded/RTOS/zephyrproject/zephyr/dts/posix'
+     - '/sripiranavan/installs/Embedded/RTOS/zephyrproject/zephyr/dts/arm64'
+     - '/sripiranavan/installs/Embedded/RTOS/zephyrproject/zephyr/dts/arm'
+     - '/sripiranavan/installs/Embedded/RTOS/zephyrproject/zephyr/dts/arc'
+     - '/sripiranavan/installs/Embedded/RTOS/zephyrproject/zephyr/dts'
+    user-files:
+     - 'boards/nucleo_f439zi.overlay'
+  kconfig:
+    files:
+     - '/sripiranavan/installs/Embedded/RTOS/zephyrproject/zephyr/boards/st/nucleo_f439zi/nucleo_f439zi_defconfig'
+     - '/sripiranavan/development/germany/sm3/research/can_t1s_latency_bench/host-tools/demo/terminal_config/prj.conf'
+    user-files:
+     - '/sripiranavan/development/germany/sm3/research/can_t1s_latency_bench/host-tools/demo/terminal_config/prj.conf'
+  toolchain:
+    name: 'zephyr'
+    path: '/home/sripiranavan/zephyr-sdk-1.0.1'
+  zephyr:
+    version: '4.4.99'
+    zephyr-base: '/sripiranavan/installs/Embedded/RTOS/zephyrproject/zephyr'
+version: '0.1.0'
+west:
+  command: '/sripiranavan/development/germany/sm3/research/.zephyr/bin/west build -p always -b nucleo_f439zi -- -DDTC_OVERLAY_FILE=boards/nucleo_f439zi.overlay'
+  topdir: '/sripiranavan/installs/Embedded/RTOS/zephyrproject'
+  version: '1.5.0'
