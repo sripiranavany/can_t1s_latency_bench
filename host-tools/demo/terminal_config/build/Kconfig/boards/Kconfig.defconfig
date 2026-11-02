@@ -1,2 +1,0 @@
-# Load Zephyr board defconfig descriptions.
-osource "/sripiranavan/installs/Embedded/RTOS/zephyrproject/zephyr/boards/st/nucleo_f439zi/Kconfig.defconfig"
