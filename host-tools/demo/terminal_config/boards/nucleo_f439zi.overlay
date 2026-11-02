@@ -1,0 +1,22 @@
+/{
+	chosen {
+		zephyr,shell-uart = &usart3;
+		zephyr,console = &usart3;
+	};
+};
+
+&usart3 {
+	status = "okay";
+	current-speed = <115200>;
+};
+
+&flash0 {
+	partitions {
+		/* 2 x 16KB sectors for NVS/settings (commented out in the board dts) */
+		storage_partition: partition@8000 {
+			compatible = "zephyr,mapped-partition";
+			label = "storage";
+			reg = <0x00008000 DT_SIZE_K(32)>;
+		};
+	};
+};
