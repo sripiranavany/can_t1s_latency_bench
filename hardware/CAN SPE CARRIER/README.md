@@ -80,6 +80,26 @@ Roughly 69 × 93 mm board, 2 copper layers.
 Signal flow in one sentence: **mainboard (J6→J4) and click shield (J5→J3) feed the CAN transceiver U2, whose CANH/CANL
 outputs go through the protection diode D2 and termination R1 to the screw terminal J1 (and jumper J2).**
 
+### 4.1 mikroBUS socket (J3 / J5)
+
+J3 and J5 are the standard **mikroBUS socket**: two 1×8 female headers, 22.86 mm (900 mil) apart, with pin 1 of both
+rows at the same end. A click board plugs in directly. No cable and no flipping is needed.
+
+| Row | Pin 1 → pin 8 |
+|---|---|
+| **J3** (left row) | AN *(not connected)*, RST, CS, SCK, MISO, MOSI, 3V3, GND |
+| **J5** (right row) | PWM *(not connected)*, INT, RX *(not connected)*, TX *(not connected)*, SCL, SDA, 5V, GND |
+
+The numbering of J5 runs in the same direction as J3. mikroBUS itself numbers the right-hand pins 16 down to 9, but
+that is only a naming convention. Physically PWM sits opposite AN, as on a real click board.
+
+**Connected pins:** RST, CS, SCK, MISO, MOSI, 3V3, GND (J3) and INT, SCL, SDA, 5V, GND (J5). These cover the
+**Two-Wire ETH Click (LAN8651)**, which talks to the host over SPI and uses INT and RST. It does not use a UART.
+
+**Not connected:** AN (J3 pin 1) and PWM, RX, TX (J5 pins 1, 3, 4). Their silkscreen labels follow the standard
+mikroBUS pin names, but nothing is routed to them. A click board that needs an analog input, a PWM output or a UART
+will **not** work in this socket.
+
 ---
 
 ## 5. Routing, net by net
