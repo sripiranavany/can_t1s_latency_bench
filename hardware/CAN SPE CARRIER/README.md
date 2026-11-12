@@ -78,7 +78,7 @@ Tips:
 Roughly 69 × 93 mm board, 2 copper layers.
 
 Signal flow in one sentence: **mainboard (J6→J4) and click shield (J5→J3) feed the CAN transceiver U2, whose CANH/CANL
-outputs go through the protection diode D2 and termination R1 to the screw terminal J1 (and jumper J2).**
+outputs go through the protection diode (D1 / D2) and termination (R1 + J4, R2 + J6) to the screw terminals J1 and J2.**
 
 ### 4.1 mikroBUS socket (J3 / J5)
 
@@ -141,10 +141,19 @@ Clearance everywhere: **0.2 mm**. Vias: **0.6 mm pad / 0.3 mm drill**.
 - Direct, short **F.Cu** tracks from the J5 header down to U2 (TXD / RXD pins). No vias.
 
 ### 5.7 CAN bus: CANH / CANL
-These are named `Net-(J1-Pin_1)` and `Net-(J1-Pin_2)` in KiCad (no custom label).
-- Routed as a **matched pair** on F.Cu above J1: same layer, same length-ish, constant spacing.
-- They are arranged so they **do not cross** each other on the way to D2 (ESD protection), R1 (120 Ω termination) and J1.
-- Good practice for CAN: keep the pair together and symmetrical – that is what was done here.
+The board has two identical CAN pairs, one per screw terminal. Each pair is named in KiCad after its terminal
+(no custom label): `Net-(J1-Pin_1)` / `Net-(J1-Pin_2)` (CANH / CANL on J1) and `Net-(J2-Pin_1)` / `Net-(J2-Pin_2)` (J2).
+- Each pair is routed **entirely on F.Cu**, with no layer change, so it is suitable for CAN FD tests.
+- **Matched:** the trunks from the transceiver to the terminal are equal. CANL has a small hairpin serpentine to make up the
+  difference. Totals including the stubs are CANH 46.85 mm and CANL 46.74 mm for each pair.
+- **Spacing:** the pair runs at 0.25 mm track width and 0.5 mm pitch, apart from near the ESD diode pads (D1 / D2).
+- **Routing:** the pair leaves the transceiver, goes down past the ESD diode (D1 for J1, D2 for J2) and passes under the
+  terminal block. It enters the J1 / J2 pins from the south, which is what keeps CANH on the correct side without a via.
+- **Termination:** the 120 Ω resistor and its jumper sit next to the pair, with stubs of about 2 mm each
+  (R1 + J4 for the J1 pair, R2 + J6 for the J2 pair). The only layer change is the resistor-to-jumper link
+  (`Net-(J4-Pin_2)` / `Net-(J6-Pin_2)`), which crosses under the pair on B.Cu through one via.
+- **GND stitching vias** are placed beside D1 / D2 pin 3 and near C2 / C5, so the GND pour pockets enclosed by the pair
+  stay connected to the B.Cu pour.
 
 ### 5.8 Ground (GND)
 - A **ground pour (zone) on both F.Cu and B.Cu** covering the whole board.
