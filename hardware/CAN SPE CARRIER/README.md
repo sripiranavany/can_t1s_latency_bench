@@ -145,15 +145,18 @@ The board has two identical CAN pairs, one per screw terminal. Each pair is name
 (no custom label): `Net-(J1-Pin_1)` / `Net-(J1-Pin_2)` (CANH / CANL on J1) and `Net-(J2-Pin_1)` / `Net-(J2-Pin_2)` (J2).
 - Each pair is routed **entirely on F.Cu**, with no layer change, so it is suitable for CAN FD tests.
 - **Matched:** the trunks from the transceiver to the terminal are equal. CANL has a small hairpin serpentine to make up the
-  difference. Totals including the stubs are CANH 46.85 mm and CANL 46.74 mm for each pair.
-- **Spacing:** the pair runs at 0.25 mm track width and 0.5 mm pitch, apart from near the ESD diode pads (D1 / D2).
-- **Routing:** the pair leaves the transceiver, goes down past the ESD diode (D1 for J1, D2 for J2) and passes under the
+  difference. Totals including the stubs are CANH 46.43 mm and CANL 46.31 mm for each pair.
+- **Spacing:** the pair runs at 0.25 mm track width and 0.5 mm pitch, apart from where CANH fans out to the ESD diode pad.
+- **ESD diodes:** D1 (J1 pair) and D2 (J2 pair) sit in-line on the pair at the corner of the terminal block, about 4 mm
+  from the GND pin and about 14 mm of track from pin 1. They cannot go closer because the terminal body covers the area
+  below the pins. The diode GND pad has a short trace to a GND via between its two signal pads.
+- **Routing:** the pair leaves the transceiver, goes down past the ESD diode and passes under the
   terminal block. It enters the J1 / J2 pins from the south, which is what keeps CANH on the correct side without a via.
 - **Termination:** the 120 Ω resistor and its jumper sit next to the pair, with stubs of about 2 mm each
   (R1 + J4 for the J1 pair, R2 + J6 for the J2 pair). The only layer change is the resistor-to-jumper link
   (`Net-(J4-Pin_2)` / `Net-(J6-Pin_2)`), which crosses under the pair on B.Cu through one via.
-- **GND stitching vias** are placed beside D1 / D2 pin 3 and near C2 / C5, so the GND pour pockets enclosed by the pair
-  stay connected to the B.Cu pour.
+- **GND stitching vias:** one for each diode GND pad (see above) and one near C2 / C5, so the GND pour pockets enclosed by
+  the pair stay connected to the B.Cu pour.
 
 ### 5.8 Ground (GND)
 - A **ground pour (zone) on both F.Cu and B.Cu** covering the whole board.
