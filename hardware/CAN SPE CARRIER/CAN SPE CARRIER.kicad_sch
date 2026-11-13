@@ -11705,6 +11705,421 @@
 			)
 		)
 	)
+	(symbol
+		(lib_id "Device:R")
+		(at 59.69 160.02 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "aaa8000e-856b-4064-8987-73e4e8d28816")
+		(property "Reference" "R5"
+			(at 62.23 158.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 62.23 161.29000000000002 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 57.912 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 59.69 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 59.69 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ca19ac73-a31c-4637-89cb-b08826c669a8")
+		)
+		(pin "2"
+			(uuid "17e4947a-43e5-48a4-81fc-5af4f16a4c86")
+		)
+		(instances
+			(project "CAN SPE CARRIER"
+				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(label "MB_SCL"
+		(at 59.69 156.21 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "12f4de17-358c-4aaf-99c8-44ef72deb2a6")
+	)
+	(label "+3V3"
+		(at 59.69 163.83 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b8299b3b-df7f-47f1-9adb-471f2e3e8f69")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 74.93 160.02 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d7a67eca-482c-45d3-88de-92028011a6db")
+		(property "Reference" "R6"
+			(at 77.47000000000001 158.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 77.47000000000001 161.29000000000002 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 73.152 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 74.93 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 74.93 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b3fcb63a-254f-49e1-864f-9955d296e854")
+		)
+		(pin "2"
+			(uuid "663be267-ea36-4ff6-9e32-0f01478d1d49")
+		)
+		(instances
+			(project "CAN SPE CARRIER"
+				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(label "MB_SDA"
+		(at 74.93 156.21 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "43d2f8fd-478f-4ae7-9ac2-7b40a8864ea1")
+	)
+	(label "+3V3"
+		(at 74.93 163.83 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "373936e4-f6cb-4c43-88c8-dbb93033854d")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 90.17 160.02 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e5040eda-604b-43c2-870e-6541c5301fbe")
+		(property "Reference" "R7"
+			(at 92.71000000000001 158.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 92.71000000000001 161.29000000000002 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 88.392 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 90.17 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 90.17 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "aef11499-2a34-4b96-b176-ea98f7bd8c7f")
+		)
+		(pin "2"
+			(uuid "78a765e9-32b1-4018-9110-024e2b2ee953")
+		)
+		(instances
+			(project "CAN SPE CARRIER"
+				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
+					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(label "MB_INT"
+		(at 90.17 156.21 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "eedfb952-02d0-4d7c-ad74-61582fffd829")
+	)
+	(label "+3V3"
+		(at 90.17 163.83 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c6d389e7-4c43-41fd-8e43-9486daf2300a")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 105.41 160.02 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "236fc902-da64-4cff-b438-ee58a03303e8")
+		(property "Reference" "R8"
+			(at 107.95 158.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 107.95 161.29000000000002 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 103.63199999999999 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 105.41 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 105.41 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "feae6be4-23b2-4017-bfaa-c9920831014c")
+		)
+		(pin "2"
+			(uuid "20aadf36-beb0-4bf9-948e-ccfd3ba1d046")
+		)
+		(instances
+			(project "CAN SPE CARRIER"
+				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
+					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(label "MB_RST"
+		(at 105.41 156.21 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "35c21319-8dfd-49c5-adf7-a56e3cb8e628")
+	)
+	(label "+3V3"
+		(at 105.41 163.83 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "933a180b-15ad-4d5d-b555-de3b80a45e59")
+	)
+	(text "Pull-ups for the mikroBUS / mainboard lines: 4.7k on SCL and SDA, 10k on INT and RST (all to +3V3)"
+		(exclude_from_sim no)
+		(at 59.69 146.05 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "561314f1-1cab-4037-a8e7-d49af3f854df")
+	)
 	(sheet_instances
 		(path "/"
 			(page "1")

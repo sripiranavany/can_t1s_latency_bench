@@ -158,7 +158,23 @@ The board has two identical CAN pairs, one per screw terminal. Each pair is name
 - **GND stitching vias:** one for each diode GND pad (see above) and one near C2 / C5, so the GND pour pockets enclosed by
   the pair stay connected to the B.Cu pour.
 
-### 5.8 Ground (GND)
+### 5.8 Pull-ups: `/MB_SCL`, `/MB_SDA`, `/MB_INT`, `/MB_RST`
+The carrier acts as the mikroBUS socket (host side), so it provides the pull-ups. All four go to **+3V3**:
+
+| Part | Value | Net | Why |
+|---|---|---|---|
+| R5 | 4.7 kΩ | `/MB_SCL` | I²C clock (open-drain) |
+| R6 | 4.7 kΩ | `/MB_SDA` | I²C data (open-drain) |
+| R7 | 10 kΩ | `/MB_INT` | Interrupt from the click board (open-drain, active low) |
+| R8 | 10 kΩ | `/MB_RST` | Keeps reset released while nothing drives it |
+
+- **Schematic:** the four resistors are at the bottom of the sheet, each with a `+3V3` label on one pin and the net label on the other.
+- **PCB:** R5–R7 sit just west of the via column at x ≈ 64 mm / y ≈ 69–74 mm, where `/MB_INT`, `/MB_SCL` and `/MB_SDA` come up to F.Cu. Each has a 1.5 mm stub from its via. A short +3V3 rail at x = 59.2 mm joins the +3V3 trunk at y = 80 mm.
+- R8 sits below them. `/MB_RST` runs on B.Cu there, so one extra via at (64.8, 75.1) brings it to F.Cu for R8.
+- **Silkscreen:** the value text is hidden on R5–R8 and their reference designators are on the F.Fab layer, because the 2.5 mm spacing leaves no room for silkscreen text.
+- If the Nucleo or the click board already has pull-ups on these lines, the extra ones are harmless (4.7 kΩ in parallel is about 2.35 kΩ). Remove R5–R8 only if the combined value would be too strong for your bus speed.
+
+### 5.9 Ground (GND)
 - A **ground pour (zone) on both F.Cu and B.Cu** covering the whole board.
 - Every GND pad connects into the pour (thermal-relief spokes: 0.4 mm bridges, 0.3 mm gap).
 - **Vias join the top and bottom pours** so both are one ground. (The board currently has only 2 GND vias – see §8.)
