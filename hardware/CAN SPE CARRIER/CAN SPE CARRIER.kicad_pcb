@@ -8881,6 +8881,30 @@
 			)
 		)
 	)
+	(gr_poly
+		(pts
+			(xy 52.4 46.9) (xy 51.2 48.6) (xy 53.6 48.6)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "0bfb0749-dcb2-4d4f-9efc-56c9c49fb68c")
+	)
+	(gr_poly
+		(pts
+			(xy 52.4 46.9) (xy 51.2 48.6) (xy 53.6 48.6)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(fill yes)
+		(layer "B.SilkS")
+		(uuid "94ffd03d-4aab-4448-bec5-795b6781c01d")
+	)
 	(gr_line
 		(start 18.65 46.07)
 		(end 88.65 46.07)
@@ -8961,6 +8985,28 @@
 		(layer "Edge.Cuts")
 		(uuid "682ef07b-7522-4e73-9388-3f6f91758cfe")
 	)
+	(gr_text "<- J7 PIN 1"
+		(at 31 47.6 0)
+		(layer "F.SilkS")
+		(uuid "9697b77e-9080-4002-b40b-a15ef03181ed")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.13)
+			)
+		)
+	)
+	(gr_text "J8 PIN 1 ->"
+		(at 74.2 47.6 0)
+		(layer "F.SilkS")
+		(uuid "c7be4f53-260f-4606-bd0c-b162579f1b16")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.13)
+			)
+		)
+	)
 	(gr_text "CAN1"
 		(at 28.4 136.4 0)
 		(layer "F.SilkS")
@@ -9031,6 +9077,17 @@
 		(at 48.6 88 0)
 		(layer "F.SilkS")
 		(uuid "74e73621-b173-41bd-bee7-5925343e60b7")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "NUCLEO ST-LINK USB END"
+		(at 52.4 50 0)
+		(layer "F.SilkS")
+		(uuid "7bba7588-5df9-4ae2-a20f-b8427102e293")
 		(effects
 			(font
 				(size 0.9 0.9)
@@ -9303,7 +9360,7 @@
 		)
 	)
 	(gr_text "CAN SPE CARRIER"
-		(at 63.5 51.5 0)
+		(at 63.5 53 0)
 		(layer "F.SilkS")
 		(uuid "b8c89f7c-bf2e-4d71-b86e-b9a464ef1c92")
 		(effects
@@ -9311,6 +9368,30 @@
 				(size 1.6 1.6)
 				(thickness 0.25)
 			)
+		)
+	)
+	(gr_text "J7 PIN 1 ->"
+		(at 31 47.6 0)
+		(layer "B.SilkS")
+		(uuid "b5cdbd85-70d8-4e73-a782-af0ff3f77c5c")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.13)
+			)
+			(justify mirror)
+		)
+	)
+	(gr_text "<- J8 PIN 1"
+		(at 74.2 47.6 0)
+		(layer "B.SilkS")
+		(uuid "0ca2f6a9-7a81-478a-9687-f4aa0a4e75ca")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.13)
+			)
+			(justify mirror)
 		)
 	)
 	(gr_text "CAN1  TX: J7-55  RX: J7-57"
@@ -9329,6 +9410,30 @@
 		(at 46.5 73 0)
 		(layer "B.SilkS")
 		(uuid "527db5f9-f952-4b09-94cf-7588deaf5d93")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(gr_text "NUCLEO ST-LINK USB END"
+		(at 52.4 50 0)
+		(layer "B.SilkS")
+		(uuid "3ce7e9e4-a4cc-47e0-bf76-ce9962536acf")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(gr_text "NUCLEO ETH / USB END"
+		(at 53.5 139.2 0)
+		(layer "B.SilkS")
+		(uuid "caf3a424-2a7c-4c28-a2d6-0b7c6aad551c")
 		(effects
 			(font
 				(size 0.9 0.9)
@@ -10234,86 +10339,6 @@
 		(uuid "c3ce73d2-bff0-4a65-a101-3a20356576e1")
 	)
 	(segment
-		(start 76.3 136.2)
-		(end 68.08 136.2)
-		(width 0.25)
-		(layer "F.Cu")
-		(net "Net-(J1-Pin_2)")
-		(uuid "2f44b077-a3d1-4e50-aa83-655eaa2cae58")
-	)
-	(segment
-		(start 76.9 126)
-		(end 74.912 126)
-		(width 0.25)
-		(layer "F.Cu")
-		(net "Net-(J1-Pin_2)")
-		(uuid "3a7fcf8f-c225-4f2a-9ab5-d2431f18702a")
-	)
-	(segment
-		(start 76.9 128.4)
-		(end 71.606 128.4)
-		(width 0.25)
-		(layer "F.Cu")
-		(net "Net-(J1-Pin_2)")
-		(uuid "3ad1a2d1-9a85-47c6-93fb-85192443bb4a")
-	)
-	(segment
-		(start 68.85 120.78)
-		(end 76.9 120.78)
-		(width 0.25)
-		(layer "F.Cu")
-		(net "Net-(J1-Pin_2)")
-		(uuid "4094a742-34b9-41e9-b871-d5fae0e636b2")
-	)
-	(segment
-		(start 76.9 120.78)
-		(end 76.9 128.4)
-		(width 0.25)
-		(layer "F.Cu")
-		(net "Net-(J1-Pin_2)")
-		(uuid "4ac86528-931f-4d64-9d4e-564141e35c75")
-	)
-	(segment
-		(start 71.606 128.4)
-		(end 71.606 129.2)
-		(width 0.25)
-		(layer "F.Cu")
-		(net "Net-(J1-Pin_2)")
-		(uuid "856a2284-32dd-467d-9b70-2389e123bd29")
-	)
-	(segment
-		(start 76.9 129.2)
-		(end 76.9 135.6)
-		(width 0.25)
-		(layer "F.Cu")
-		(net "Net-(J1-Pin_2)")
-		(uuid "b363609e-2523-407e-a098-ba781a56527c")
-	)
-	(segment
-		(start 71.606 129.2)
-		(end 76.9 129.2)
-		(width 0.25)
-		(layer "F.Cu")
-		(net "Net-(J1-Pin_2)")
-		(uuid "cb511933-b5a5-4daf-8924-05709eab1817")
-	)
-	(segment
-		(start 68.08 136.2)
-		(end 68.08 134.4)
-		(width 0.25)
-		(layer "F.Cu")
-		(net "Net-(J1-Pin_2)")
-		(uuid "e3257193-3486-49fe-93c1-f6761b551df1")
-	)
-	(segment
-		(start 76.9 135.6)
-		(end 76.3 136.2)
-		(width 0.25)
-		(layer "F.Cu")
-		(net "Net-(J1-Pin_2)")
-		(uuid "fbe4873c-a3a2-47af-aa71-f2f47a6090f0")
-	)
-	(segment
 		(start 70.5 78.27)
 		(end 70.5 78.25)
 		(width 0.3)
@@ -10712,6 +10737,86 @@
 		(layer "B.Cu")
 		(net "+3V3")
 		(uuid "a9ee621e-e950-446f-a68b-70348956e73e")
+	)
+	(segment
+		(start 76.3 136.2)
+		(end 68.08 136.2)
+		(width 0.25)
+		(layer "F.Cu")
+		(net "Net-(J1-Pin_2)")
+		(uuid "2f44b077-a3d1-4e50-aa83-655eaa2cae58")
+	)
+	(segment
+		(start 76.9 126)
+		(end 74.912 126)
+		(width 0.25)
+		(layer "F.Cu")
+		(net "Net-(J1-Pin_2)")
+		(uuid "3a7fcf8f-c225-4f2a-9ab5-d2431f18702a")
+	)
+	(segment
+		(start 76.9 128.4)
+		(end 71.606 128.4)
+		(width 0.25)
+		(layer "F.Cu")
+		(net "Net-(J1-Pin_2)")
+		(uuid "3ad1a2d1-9a85-47c6-93fb-85192443bb4a")
+	)
+	(segment
+		(start 68.85 120.78)
+		(end 76.9 120.78)
+		(width 0.25)
+		(layer "F.Cu")
+		(net "Net-(J1-Pin_2)")
+		(uuid "4094a742-34b9-41e9-b871-d5fae0e636b2")
+	)
+	(segment
+		(start 76.9 120.78)
+		(end 76.9 128.4)
+		(width 0.25)
+		(layer "F.Cu")
+		(net "Net-(J1-Pin_2)")
+		(uuid "4ac86528-931f-4d64-9d4e-564141e35c75")
+	)
+	(segment
+		(start 71.606 128.4)
+		(end 71.606 129.2)
+		(width 0.25)
+		(layer "F.Cu")
+		(net "Net-(J1-Pin_2)")
+		(uuid "856a2284-32dd-467d-9b70-2389e123bd29")
+	)
+	(segment
+		(start 76.9 129.2)
+		(end 76.9 135.6)
+		(width 0.25)
+		(layer "F.Cu")
+		(net "Net-(J1-Pin_2)")
+		(uuid "b363609e-2523-407e-a098-ba781a56527c")
+	)
+	(segment
+		(start 71.606 129.2)
+		(end 76.9 129.2)
+		(width 0.25)
+		(layer "F.Cu")
+		(net "Net-(J1-Pin_2)")
+		(uuid "cb511933-b5a5-4daf-8924-05709eab1817")
+	)
+	(segment
+		(start 68.08 136.2)
+		(end 68.08 134.4)
+		(width 0.25)
+		(layer "F.Cu")
+		(net "Net-(J1-Pin_2)")
+		(uuid "e3257193-3486-49fe-93c1-f6761b551df1")
+	)
+	(segment
+		(start 76.9 135.6)
+		(end 76.3 136.2)
+		(width 0.25)
+		(layer "F.Cu")
+		(net "Net-(J1-Pin_2)")
+		(uuid "fbe4873c-a3a2-47af-aa71-f2f47a6090f0")
 	)
 	(segment
 		(start 52.5 76.0875)

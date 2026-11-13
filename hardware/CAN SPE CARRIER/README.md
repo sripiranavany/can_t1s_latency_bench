@@ -174,7 +174,23 @@ The carrier acts as the mikroBUS socket (host side), so it provides the pull-ups
 - **Silkscreen:** the value text is hidden on R5–R8 and their reference designators are on the F.Fab layer, because the 2.5 mm spacing leaves no room for silkscreen text.
 - If the Nucleo or the click board already has pull-ups on these lines, the extra ones are harmless (4.7 kΩ in parallel is about 2.35 kΩ). Remove R5–R8 only if the combined value would be too strong for your bus speed.
 
-### 5.9 Ground (GND)
+### 5.9 Orientation marks (silkscreen)
+The board is a symmetric rectangle with two 2×35 sockets, so it could be plugged onto the Nucleo rotated by 180°. That would put
+5 V / 3.3 V on the wrong pins. To prevent this, both silkscreen layers carry orientation text:
+
+| Mark | Where | Meaning |
+|---|---|---|
+| ▲ + `NUCLEO ST-LINK USB END` | top edge, centred (y ≈ 47–50 mm) | This end goes over the Nucleo's ST-LINK USB connector. Pin 1 of J7 and J8 is here. |
+| `NUCLEO ETH / USB END` | bottom edge, centred (y ≈ 139 mm), bottom silk only | This end goes over the Nucleo's RJ45 Ethernet connector and user USB. The screw terminals J1 and J2 are on this side. |
+| `J7 PIN 1` / `J8 PIN 1` with arrows | next to the top corners | The arrow points at pin 1 of each 2×35 socket. |
+
+- The texts are on **both** `F.SilkS` and `B.SilkS`. The bottom text is mirrored so it reads correctly when you flip the board over.
+  The `NUCLEO ETH / USB END` text is bottom-only, because the top side of that end is covered by the terminal block silkscreen.
+- **How the ends were determined:** from the Nucleo 3D model (`NUCLEO-F439ZI-carrier-aligned.step`). The ST-LINK USB connector (CN1)
+  is at one end of the Nucleo and the RJ45 at the other. The carrier's pin-1 end (y ≈ 50 mm) is over the ST-LINK end. Please confirm this
+  once against the real board before ordering.
+
+### 5.10 Ground (GND)
 - A **ground pour (zone) on both F.Cu and B.Cu** covering the whole board.
 - Every GND pad connects into the pour (thermal-relief spokes: 0.4 mm bridges, 0.3 mm gap).
 - **Vias join the top and bottom pours** so both are one ground. (The board currently has only 2 GND vias – see §8.)
