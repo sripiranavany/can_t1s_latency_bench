@@ -144,8 +144,11 @@ Clearance everywhere: **0.2 mm**. Vias: **0.6 mm pad / 0.3 mm drill**.
 The board has two identical CAN pairs, one per screw terminal. Each pair is named in KiCad after its terminal
 (no custom label): `Net-(J1-Pin_1)` / `Net-(J1-Pin_2)` (CANH / CANL on J1) and `Net-(J2-Pin_1)` / `Net-(J2-Pin_2)` (J2).
 - Each pair is routed **entirely on F.Cu**, with no layer change, so it is suitable for CAN FD tests.
-- **Matched:** the trunks from the transceiver to the terminal are equal. CANL has a small hairpin serpentine to make up the
-  difference. Totals including the stubs are CANH 46.43 mm and CANL 46.31 mm for each pair.
+- **Not length-matched, on purpose:** CANH is the outer track and CANL the inner one, so CANH is longer (about 45.3 mm
+  against 34.6 mm for CANL, a difference of about 10.7 mm for each pair). The earlier CANL serpentine was removed because CAN
+  does not need meanders: the difference is about 70 ps of skew, against a bit time of 200 ns even at 5 Mbit/s in CAN FD.
+- **Corners:** there are no 90° corners on the CAN pairs or on the termination links. Every turn is a pair of 45° bends
+  (a 1 mm chamfer), which keeps the impedance step small and avoids reflections.
 - **Spacing:** the pair runs at 0.25 mm track width and 0.5 mm pitch, apart from where CANH fans out to the ESD diode pad.
 - **ESD diodes:** D1 (J1 pair) and D2 (J2 pair) sit in-line on the pair at the corner of the terminal block, about 4 mm
   from the GND pin and about 14 mm of track from pin 1. They cannot go closer because the terminal body covers the area
@@ -155,7 +158,7 @@ The board has two identical CAN pairs, one per screw terminal. Each pair is name
 - **Termination:** the 120 Ω resistor and its jumper sit next to the pair, with stubs of about 2 mm each
   (R1 + J4 for the J1 pair, R2 + J6 for the J2 pair). The only layer change is the resistor-to-jumper link
   (`Net-(J4-Pin_2)` / `Net-(J6-Pin_2)`), which crosses under the pair on B.Cu through one via.
-- **GND stitching vias:** one for each diode GND pad (see above) and one near C2 / C5, so the GND pour pockets enclosed by
+- **GND stitching vias:** one for each diode GND pad (see above) and four more beside the transceivers at (45.2, 123.9), (50.4, 124.3), (75.2, 123.9) and (80.4, 124.3), so the GND pour pockets enclosed by
   the pair stay connected to the B.Cu pour.
 
 ### 5.8 Pull-ups: `/MB_SCL`, `/MB_SDA`, `/MB_INT`, `/MB_RST`
@@ -193,7 +196,7 @@ The board is a symmetric rectangle with two 2×35 sockets, so it could be plugge
 ### 5.10 Ground (GND)
 - A **ground pour (zone) on both F.Cu and B.Cu** covering the whole board.
 - Every GND pad connects into the pour (thermal-relief spokes: 0.4 mm bridges, 0.3 mm gap).
-- **Vias join the top and bottom pours** so both are one ground. (The board currently has only 2 GND vias – see §8.)
+- **Vias join the top and bottom pours** so both are one ground. (The board currently has 6 GND vias: two at the ESD diodes and four near the CAN transceivers – see §8.)
 - Because of the pour, you do not see individual GND tracks; ground is "everywhere there is no other signal".
 
 ---
@@ -231,7 +234,7 @@ Why:
 6. Use *Appearance → Layers* to view only `F.Cu`, then only `B.Cu`.
 
 ### Things to improve / double-check
-- **Stitching vias:** only 2 GND vias exist. Adding a few more near the edges and next to the signal vias
+- **Stitching vias:** only 6 GND vias exist (two at the ESD diodes, four near the transceivers and the termination resistors). Adding a few more near the edges and next to the signal vias
   (*Place → Via*, set net to `GND`) improves return-current paths between the two ground pours.
 - **Check the current rating:** 0.5 mm copper at 1 oz handles roughly 1 A; verify this is enough for your 3V3 and 5V loads.
 - **Fab capabilities:** the design uses 0.2 mm clearance, 0.25 mm signal tracks and 0.6/0.3 mm vias.
