@@ -4954,11 +4954,34 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Pull-ups for the mikroBUS / mainboard lines: 4.7k on SCL and SDA, 10k on INT and RST (all to +3V3)"
+		(exclude_from_sim no)
+		(at 59.69 146.05 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "561314f1-1cab-4037-a8e7-d49af3f854df")
+	)
 	(junction
 		(at 54.61 30.48)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "09bf4c3b-480f-4373-af74-8abcaa8b1194")
+	)
+	(junction
+		(at 147.32 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1c5bfb7d-30cc-4db8-8d80-016f70dc554e")
+	)
+	(junction
+		(at 142.24 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3135e299-9a1f-41c2-8239-17cb447f9730")
 	)
 	(junction
 		(at 46.99 55.88)
@@ -4983,6 +5006,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "539d984a-a134-4d3b-ab08-b69ce1838295")
+	)
+	(junction
+		(at 157.48 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "58b8fdd6-9dfc-405a-ad9f-2f62ce7c691e")
+	)
+	(junction
+		(at 163.83 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5943a05e-7e19-4ca4-9027-fb05178824b3")
 	)
 	(junction
 		(at 74.93 73.66)
@@ -5062,16 +5097,6 @@
 		(at 233.68 96.52)
 		(uuid "18619b3e-2df2-41d4-a5ab-b6dcc02e8730")
 	)
-	(label "GND"
-		(at 255.27 114.3 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "3f057da5-1831-4de9-8e2c-55fae74c5a2d")
-	)
 	(no_connect
 		(at 255.27 78.74)
 		(uuid "1d7d48f8-4525-459d-a4c9-887ed8407cc5")
@@ -5095,16 +5120,6 @@
 	(no_connect
 		(at 220.98 91.44)
 		(uuid "27b594c4-ca79-4bbe-a674-b21bc93bbc19")
-	)
-	(label "GND"
-		(at 255.27 83.82 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "1ddf3eb5-4ac2-4481-9608-25588a50d4e3")
 	)
 	(no_connect
 		(at 220.98 43.18)
@@ -5290,16 +5305,6 @@
 		(at 255.27 86.36)
 		(uuid "7a4da3f9-b82e-46dd-9b8c-89510d914298")
 	)
-	(label "GND"
-		(at 220.98 58.42 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "dcca2154-834c-4043-b31d-7327fb47e1b5")
-	)
 	(no_connect
 		(at 220.98 53.34)
 		(uuid "7c494309-5f92-4431-8e18-fdd400a494b1")
@@ -5307,16 +5312,6 @@
 	(no_connect
 		(at 255.27 73.66)
 		(uuid "7c6c0cec-8133-4855-8073-6dc2200801e7")
-	)
-	(label "GND"
-		(at 267.97 101.6 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "40e31875-3b8e-4f8c-a7d2-922120ec3fa9")
 	)
 	(no_connect
 		(at 267.97 111.76)
@@ -5394,16 +5389,6 @@
 		(at 267.97 106.68)
 		(uuid "9511b73d-b09c-42ef-837c-298fcbc7fbe8")
 	)
-	(label "GND"
-		(at 255.27 45.72 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "e8ca18b4-7f35-4bb1-a939-6a666ff87e43")
-	)
 	(no_connect
 		(at 267.97 81.28)
 		(uuid "961fdce6-1fed-42c9-b5f2-7ecb925f24f0")
@@ -5452,16 +5437,6 @@
 		(at 82.55 111.76)
 		(uuid "b5afcb25-7589-4d02-b41f-a9cf2fc9b158")
 	)
-	(label "GND"
-		(at 233.68 109.22 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "344ffec7-0307-4a7a-93a7-1606627b687e")
-	)
 	(no_connect
 		(at 233.68 40.64)
 		(uuid "b9b05ab3-4994-49b4-a650-5c067b1750d0")
@@ -5505,16 +5480,6 @@
 	(no_connect
 		(at 267.97 76.2)
 		(uuid "d1caa2f4-27a3-4c37-8ef1-37085e6da571")
-	)
-	(label "GND"
-		(at 220.98 96.52 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "8b05dc39-13f1-4697-81cb-96d550b10c2f")
 	)
 	(no_connect
 		(at 220.98 66.04)
@@ -5563,16 +5528,6 @@
 	(no_connect
 		(at 220.98 119.38)
 		(uuid "ebf16b54-41b6-48f5-813b-860c09ab4f4f")
-	)
-	(label "GND"
-		(at 233.68 60.96 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "208dab80-b039-4cb5-ba33-38df5f0b8c10")
 	)
 	(no_connect
 		(at 267.97 91.44)
@@ -5746,6 +5701,16 @@
 	)
 	(wire
 		(pts
+			(xy 157.48 76.2) (xy 149.86 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44dca735-2939-4b77-b6df-92d96e6f9b1f")
+	)
+	(wire
+		(pts
 			(xy 113.03 129.54) (xy 113.03 127)
 		)
 		(stroke
@@ -5863,6 +5828,16 @@
 			(type default)
 		)
 		(uuid "6c78ceda-8928-4db3-b6d7-c47b2eb0e98b")
+	)
+	(wire
+		(pts
+			(xy 163.83 82.55) (xy 167.64 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e1de1a1-ee47-40c8-99bf-61d369dde69c")
 	)
 	(wire
 		(pts
@@ -6204,6 +6179,16 @@
 		)
 		(uuid "07bbf203-6246-4e00-8f64-0c89cb447de0")
 	)
+	(label "MB_SCL"
+		(at 59.69 156.21 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "12f4de17-358c-4aaf-99c8-44ef72deb2a6")
+	)
 	(label "SPI_CS"
 		(at 113.03 129.54 0)
 		(effects
@@ -6234,6 +6219,26 @@
 		)
 		(uuid "1a060c40-44df-4dcd-bb52-9060d7ea4b49")
 	)
+	(label "GND"
+		(at 255.27 83.82 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1ddf3eb5-4ac2-4481-9608-25588a50d4e3")
+	)
+	(label "GND"
+		(at 233.68 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "208dab80-b039-4cb5-ba33-38df5f0b8c10")
+	)
 	(label "SPI_SCK"
 		(at 53.34 119.38 180)
 		(effects
@@ -6244,6 +6249,46 @@
 		)
 		(uuid "314d0aef-269d-4a8d-aee1-d058a9b65cad")
 	)
+	(label "GND"
+		(at 233.68 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "344ffec7-0307-4a7a-93a7-1606627b687e")
+	)
+	(label "MB_RST"
+		(at 105.41 156.21 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "35c21319-8dfd-49c5-adf7-a56e3cb8e628")
+	)
+	(label "+3V3"
+		(at 74.93 163.83 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "373936e4-f6cb-4c43-88c8-dbb93033854d")
+	)
+	(label "GND"
+		(at 255.27 114.3 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3f057da5-1831-4de9-8e2c-55fae74c5a2d")
+	)
 	(label "SPI_MOSI"
 		(at 220.98 38.1 180)
 		(effects
@@ -6253,6 +6298,26 @@
 			(justify right bottom)
 		)
 		(uuid "402f673d-96d2-4f46-b4ef-6ee3d303f572")
+	)
+	(label "GND"
+		(at 267.97 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "40e31875-3b8e-4f8c-a7d2-922120ec3fa9")
+	)
+	(label "MB_SDA"
+		(at 74.93 156.21 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "43d2f8fd-478f-4ae7-9ac2-7b40a8864ea1")
 	)
 	(label "GND"
 		(at 267.97 58.42 0)
@@ -6364,6 +6429,16 @@
 		)
 		(uuid "8a50ebc7-cbeb-4bae-8ebe-de48900a69fc")
 	)
+	(label "GND"
+		(at 220.98 96.52 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8b05dc39-13f1-4697-81cb-96d550b10c2f")
+	)
 	(label "SPI_CS"
 		(at 233.68 38.1 0)
 		(effects
@@ -6373,6 +6448,16 @@
 			(justify left bottom)
 		)
 		(uuid "92aacd67-af87-4d6f-89da-951cba6820be")
+	)
+	(label "+3V3"
+		(at 105.41 163.83 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "933a180b-15ad-4d5d-b555-de3b80a45e59")
 	)
 	(label "CAN2_RX"
 		(at 255.27 71.12 180)
@@ -6444,6 +6529,16 @@
 		)
 		(uuid "b6bf146f-9764-4c31-a9fd-c8f5672c2fbc")
 	)
+	(label "+3V3"
+		(at 59.69 163.83 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b8299b3b-df7f-47f1-9adb-471f2e3e8f69")
+	)
 	(label "MB_SCL"
 		(at 82.55 121.92 0)
 		(effects
@@ -6453,6 +6548,26 @@
 			(justify left bottom)
 		)
 		(uuid "c63b52e5-26a6-4ba2-941a-84544d20e273")
+	)
+	(label "+3V3"
+		(at 90.17 163.83 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c6d389e7-4c43-41fd-8e43-9486daf2300a")
+	)
+	(label "GND"
+		(at 220.98 58.42 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "dcca2154-834c-4043-b31d-7327fb47e1b5")
 	)
 	(label "SPI_MOSI"
 		(at 53.34 124.46 180)
@@ -6474,6 +6589,16 @@
 		)
 		(uuid "e558871a-e0a9-427a-82c7-d528409a8a4a")
 	)
+	(label "GND"
+		(at 255.27 45.72 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e8ca18b4-7f35-4bb1-a939-6a666ff87e43")
+	)
 	(label "MB_SCL"
 		(at 255.27 38.1 180)
 		(effects
@@ -6483,6 +6608,16 @@
 			(justify right bottom)
 		)
 		(uuid "ecf5d634-7bb5-49e4-a899-c80265f09036")
+	)
+	(label "MB_INT"
+		(at 90.17 156.21 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "eedfb952-02d0-4d7c-ad74-61582fffd829")
 	)
 	(label "CAN2_RX"
 		(at 137.16 41.91 0)
@@ -6533,84 +6668,6 @@
 			(justify right bottom)
 		)
 		(uuid "fd48d07c-fa90-45ae-8345-cc793b2b8e8b")
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 167.64 66.04 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "033d1eac-6a2d-4d27-8812-5e13de1e7750")
-		(property "Reference" "#PWR018"
-			(at 167.64 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 167.64 60.96 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 167.64 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 167.64 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 167.64 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "dc00d268-ce7c-416d-9767-4f18b3697087")
-		)
-		(instances
-			(project "CAN SPE CARRIER"
-				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
-					(reference "#PWR018")
-					(unit 1)
-				)
-			)
-		)
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
@@ -7589,6 +7646,87 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 105.41 160.02 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "236fc902-da64-4cff-b438-ee58a03303e8")
+		(property "Reference" "R8"
+			(at 107.95 158.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 107.95 161.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 103.632 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 105.41 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 105.41 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "feae6be4-23b2-4017-bfaa-c9920831014c")
+		)
+		(pin "2"
+			(uuid "20aadf36-beb0-4bf9-948e-ccfd3ba1d046")
+		)
+		(instances
+			(project "CAN SPE CARRIER"
+				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
+					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 140.97 129.54 0)
 		(unit 1)
@@ -7669,7 +7807,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 16.51 76.2 0)
+		(at 142.24 29.21 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7680,7 +7818,7 @@
 		(fields_autoplaced yes)
 		(uuid "28073c35-1834-4e51-bc16-4ae75cb5e8a0")
 		(property "Reference" "#PWR02"
-			(at 16.51 82.55 0)
+			(at 142.24 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7691,7 +7829,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 16.51 81.28 0)
+			(at 142.24 24.13 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7701,7 +7839,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 16.51 76.2 0)
+			(at 142.24 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7712,7 +7850,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 16.51 76.2 0)
+			(at 142.24 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7828,7 +7966,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 16.51 72.39 0)
+		(at 142.24 33.02 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7836,10 +7974,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "33d9b6d2-c67d-4960-a6f4-ce5437df27ea")
 		(property "Reference" "C1"
-			(at 20.32 71.1199 0)
+			(at 147.574 32.766 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7850,7 +7987,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 20.32 73.6599 0)
+			(at 149.098 35.306 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7861,7 +7998,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 17.4752 76.2 0)
+			(at 142.24 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7872,7 +8009,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 16.51 72.39 0)
+			(at 142.24 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7883,7 +8020,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 16.51 72.39 0)
+			(at 142.24 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7992,7 +8129,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 184.15 69.85 0)
+		(at 167.64 78.74 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8000,10 +8137,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "381edc5f-1251-405e-a757-bc81c82e621a")
 		(property "Reference" "C5"
-			(at 187.96 68.5799 0)
+			(at 172.974 78.232 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8014,7 +8150,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 187.96 71.1199 0)
+			(at 173.99 80.772 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8025,7 +8161,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 185.1152 73.66 0)
+			(at 167.64 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8036,7 +8172,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 184.15 69.85 0)
+			(at 167.64 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8047,7 +8183,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 184.15 69.85 0)
+			(at 167.64 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9140,84 +9276,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 184.15 66.04 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6132fa7d-aa17-47e5-9ba8-b9ead0c2349a")
-		(property "Reference" "#PWR022"
-			(at 184.15 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 184.15 60.96 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 184.15 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 184.15 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 184.15 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "450e7a8a-e11e-4bf0-b65b-99c0c92c7048")
-		)
-		(instances
-			(project "CAN SPE CARRIER"
-				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
-					(reference "#PWR022")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:LED")
 		(at 172.72 46.99 90)
 		(unit 1)
@@ -9312,7 +9370,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 167.64 73.66 0)
+		(at 149.86 68.58 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9323,7 +9381,7 @@
 		(fields_autoplaced yes)
 		(uuid "6d7e3418-253b-4c6b-92a6-118b597b6754")
 		(property "Reference" "#PWR019"
-			(at 167.64 80.01 0)
+			(at 149.86 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9334,7 +9392,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 167.64 78.74 0)
+			(at 149.86 63.5 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9344,7 +9402,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 167.64 73.66 0)
+			(at 149.86 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9355,7 +9413,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 167.64 73.66 0)
+			(at 149.86 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9559,84 +9617,6 @@
 			(project "CAN SPE CARRIER"
 				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
 					(reference "#PWR017")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 16.51 68.58 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "732e0892-bc4a-4766-9c61-dbd86428aa58")
-		(property "Reference" "#PWR01"
-			(at 16.51 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 16.51 63.5 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 16.51 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 16.51 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 16.51 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "0ad68730-a198-44e5-a20a-85f70b6af8de")
-		)
-		(instances
-			(project "CAN SPE CARRIER"
-				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
-					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -9963,7 +9943,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 184.15 73.66 0)
+		(at 167.64 74.93 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9974,7 +9954,7 @@
 		(fields_autoplaced yes)
 		(uuid "83691092-6a95-42f8-a708-9c862f03a5da")
 		(property "Reference" "#PWR023"
-			(at 184.15 80.01 0)
+			(at 167.64 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9985,7 +9965,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 184.15 78.74 0)
+			(at 167.64 69.85 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9995,7 +9975,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 184.15 73.66 0)
+			(at 167.64 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10006,7 +9986,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 184.15 73.66 0)
+			(at 167.64 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10119,7 +10099,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 167.64 69.85 0)
+		(at 149.86 72.39 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10127,10 +10107,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "8b4239c6-c4c3-4e55-ae7c-ee991dce9e8f")
 		(property "Reference" "C3"
-			(at 171.45 68.5799 0)
+			(at 154.94 72.136 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10141,7 +10120,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 171.45 71.1199 0)
+			(at 156.464 74.676 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10152,7 +10131,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 168.6052 73.66 0)
+			(at 149.86 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10163,7 +10142,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 167.64 69.85 0)
+			(at 149.86 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10174,7 +10153,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 167.64 69.85 0)
+			(at 149.86 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10201,7 +10180,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 33.02 72.39 0)
+		(at 147.32 43.18 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10212,7 +10191,7 @@
 		(fields_autoplaced yes)
 		(uuid "8fb5390d-c0ec-495c-b1db-2ce839516a1e")
 		(property "Reference" "C2"
-			(at 36.83 71.1199 0)
+			(at 151.13 41.91 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10223,7 +10202,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 36.83 73.6599 0)
+			(at 151.13 44.45 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10234,7 +10213,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 33.9852 76.2 0)
+			(at 147.32 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10245,7 +10224,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 33.02 72.39 0)
+			(at 147.32 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10256,7 +10235,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 33.02 72.39 0)
+			(at 147.32 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10892,8 +10871,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 33.02 76.2 0)
+		(lib_id "Device:R")
+		(at 59.69 160.02 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10901,31 +10880,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b1cead02-5935-4e97-9fc3-d0e4c5abc8e9")
-		(property "Reference" "#PWR05"
-			(at 33.02 82.55 0)
-			(hide yes)
+		(uuid "aaa8000e-856b-4064-8987-73e4e8d28816")
+		(property "Reference" "R5"
+			(at 62.23 158.75 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "GND"
-			(at 33.02 81.28 0)
+		(property "Value" "4.7k"
+			(at 62.23 161.29 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 33.02 76.2 0)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 57.912 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10936,7 +10915,88 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 33.02 76.2 0)
+			(at 59.69 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 59.69 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ca19ac73-a31c-4637-89cb-b08826c669a8")
+		)
+		(pin "2"
+			(uuid "17e4947a-43e5-48a4-81fc-5af4f16a4c86")
+		)
+		(instances
+			(project "CAN SPE CARRIER"
+				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 147.32 46.99 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b1cead02-5935-4e97-9fc3-d0e4c5abc8e9")
+		(property "Reference" "#PWR05"
+			(at 147.32 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 147.32 52.07 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 147.32 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 147.32 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11127,6 +11187,87 @@
 	)
 	(symbol
 		(lib_id "Device:R")
+		(at 74.93 160.02 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d7a67eca-482c-45d3-88de-92028011a6db")
+		(property "Reference" "R6"
+			(at 77.47 158.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 77.47 161.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 73.152 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 74.93 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 74.93 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b3fcb63a-254f-49e1-864f-9955d296e854")
+		)
+		(pin "2"
+			(uuid "663be267-ea36-4ff6-9e32-0f01478d1d49")
+		)
+		(instances
+			(project "CAN SPE CARRIER"
+				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
 		(at 113.03 123.19 180)
 		(unit 1)
 		(body_style 1)
@@ -11287,8 +11428,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 33.02 68.58 0)
+		(lib_id "Device:R")
+		(at 90.17 160.02 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11296,31 +11437,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e23a8934-7e62-4221-8c58-79eed8b90fcf")
-		(property "Reference" "#PWR04"
-			(at 33.02 72.39 0)
-			(hide yes)
+		(uuid "e5040eda-604b-43c2-870e-6541c5301fbe")
+		(property "Reference" "R7"
+			(at 92.71 158.75 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "+3V3"
-			(at 33.02 63.5 0)
+		(property "Value" "10k"
+			(at 92.71 161.29 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 33.02 68.58 0)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 88.392 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11331,7 +11472,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 33.02 68.58 0)
+			(at 90.17 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11341,8 +11482,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 33.02 68.58 0)
+		(property "Description" "Resistor"
+			(at 90.17 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11353,12 +11494,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "c9caf60a-4322-4134-b6b6-6548772a03c6")
+			(uuid "aef11499-2a34-4b96-b176-ea98f7bd8c7f")
+		)
+		(pin "2"
+			(uuid "78a765e9-32b1-4018-9110-024e2b2ee953")
 		)
 		(instances
 			(project "CAN SPE CARRIER"
 				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
-					(reference "#PWR04")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -11704,421 +11848,6 @@
 				)
 			)
 		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 59.69 160.02 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "aaa8000e-856b-4064-8987-73e4e8d28816")
-		(property "Reference" "R5"
-			(at 62.23 158.75 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "4.7k"
-			(at 62.23 161.29000000000002 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 57.912 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 59.69 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 59.69 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "ca19ac73-a31c-4637-89cb-b08826c669a8")
-		)
-		(pin "2"
-			(uuid "17e4947a-43e5-48a4-81fc-5af4f16a4c86")
-		)
-		(instances
-			(project "CAN SPE CARRIER"
-				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
-					(reference "R5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(label "MB_SCL"
-		(at 59.69 156.21 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "12f4de17-358c-4aaf-99c8-44ef72deb2a6")
-	)
-	(label "+3V3"
-		(at 59.69 163.83 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b8299b3b-df7f-47f1-9adb-471f2e3e8f69")
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 74.93 160.02 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "d7a67eca-482c-45d3-88de-92028011a6db")
-		(property "Reference" "R6"
-			(at 77.47000000000001 158.75 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "4.7k"
-			(at 77.47000000000001 161.29000000000002 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 73.152 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 74.93 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 74.93 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b3fcb63a-254f-49e1-864f-9955d296e854")
-		)
-		(pin "2"
-			(uuid "663be267-ea36-4ff6-9e32-0f01478d1d49")
-		)
-		(instances
-			(project "CAN SPE CARRIER"
-				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
-					(reference "R6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(label "MB_SDA"
-		(at 74.93 156.21 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "43d2f8fd-478f-4ae7-9ac2-7b40a8864ea1")
-	)
-	(label "+3V3"
-		(at 74.93 163.83 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "373936e4-f6cb-4c43-88c8-dbb93033854d")
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 90.17 160.02 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "e5040eda-604b-43c2-870e-6541c5301fbe")
-		(property "Reference" "R7"
-			(at 92.71000000000001 158.75 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 92.71000000000001 161.29000000000002 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 88.392 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 90.17 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 90.17 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "aef11499-2a34-4b96-b176-ea98f7bd8c7f")
-		)
-		(pin "2"
-			(uuid "78a765e9-32b1-4018-9110-024e2b2ee953")
-		)
-		(instances
-			(project "CAN SPE CARRIER"
-				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
-					(reference "R7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(label "MB_INT"
-		(at 90.17 156.21 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "eedfb952-02d0-4d7c-ad74-61582fffd829")
-	)
-	(label "+3V3"
-		(at 90.17 163.83 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c6d389e7-4c43-41fd-8e43-9486daf2300a")
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 105.41 160.02 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "236fc902-da64-4cff-b438-ee58a03303e8")
-		(property "Reference" "R8"
-			(at 107.95 158.75 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 107.95 161.29000000000002 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 103.63199999999999 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 105.41 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 105.41 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "feae6be4-23b2-4017-bfaa-c9920831014c")
-		)
-		(pin "2"
-			(uuid "20aadf36-beb0-4bf9-948e-ccfd3ba1d046")
-		)
-		(instances
-			(project "CAN SPE CARRIER"
-				(path "/d03e9e80-5886-434c-8a4c-1c6013e73801"
-					(reference "R8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(label "MB_RST"
-		(at 105.41 156.21 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "35c21319-8dfd-49c5-adf7-a56e3cb8e628")
-	)
-	(label "+3V3"
-		(at 105.41 163.83 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "933a180b-15ad-4d5d-b555-de3b80a45e59")
-	)
-	(text "Pull-ups for the mikroBUS / mainboard lines: 4.7k on SCL and SDA, 10k on INT and RST (all to +3V3)"
-		(exclude_from_sim no)
-		(at 59.69 146.05 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "561314f1-1cab-4037-a8e7-d49af3f854df")
 	)
 	(sheet_instances
 		(path "/"
