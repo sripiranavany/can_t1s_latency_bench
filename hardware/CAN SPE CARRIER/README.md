@@ -213,9 +213,11 @@ Each one sits on a short 0.25 mm stub (2.5 to 4.5 mm; 9 mm for TP4) off its net,
 | TP6 | CANL, J2 pair (`Net-(J2-Pin_2)`) | (44.8, 122.2) |
 | TP7 | `/CAN2_TX` (U1 TXD) | (80.0, 75.7) |
 | TP8 | `/CAN2_RX` (U1 RXD) | (67.1, 115.6) |
-| TP9 | `/CAN1_TX` (U2 TXD) | (29.1, 115.5) |
+| TP9 | `/CAN1_TX` (U2 TXD) | (27.0, 120.2) |
 | TP10 | `/CAN1_RX` (U2 RXD) | (28.0, 124.2) |
-| TP11 | +5V | (55.5, 108.4) |
+| TP11 | +5V | (39.5, 85.4) |
+
+The Two-Wire ETH Click plugs into J3/J5 and covers roughly x = -5 to 58 mm, y = 90 to 118 mm, so the test points were placed outside that area to stay reachable with the module fitted (TP2 sits right at its upper corner).
 
 TP1 and TP2 were first 1.5 mm surface pads. They were moved a few millimetres and converted to the same through-hole footprint,
 because the back-layer tracks under their old positions would have clashed with a through-hole pad. TP2 is the scope ground.
