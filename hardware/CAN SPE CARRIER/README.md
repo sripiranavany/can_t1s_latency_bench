@@ -199,6 +199,27 @@ The board is a symmetric rectangle with two 2×35 sockets, so it could be plugge
 - **Vias join the top and bottom pours** so both are one ground. (The board has 23 GND vias: two at the ESD diodes, four near the CAN transceivers and 17 stitching vias spread over the board so no point on the pour is more than about 12 mm from a via – see §8.)
 - Because of the pour, you do not see individual GND tracks; ground is "everywhere there is no other signal".
 
+### 5.11 Test points
+All eleven test points (TP1 to TP11) are through-hole parts for scope probing (footprint `TestPoint_THTPad_D2.0mm_Drill1.0mm`: 2.0 mm pad, 1.0 mm hole).
+Each one sits on a short 0.25 mm stub (2.5 to 4.5 mm; 9 mm for TP4) off its net, in free copper and outside every part's courtyard, so it adds no 90° corners to the CAN pairs.
+
+| Ref | Net | Position (mm) |
+|---|---|---|
+| TP1 | +3V3 | (48.9, 74.7) |
+| TP2 | GND | (57.3, 89.3) |
+| TP3 | CANH, J1 pair (`Net-(J1-Pin_1)`) | (80.0, 121.5) |
+| TP4 | CANL, J1 pair (`Net-(J1-Pin_2)`) | (70.5, 126.6) |
+| TP5 | CANH, J2 pair (`Net-(J2-Pin_1)`) | (52.8, 132.0) |
+| TP6 | CANL, J2 pair (`Net-(J2-Pin_2)`) | (44.8, 122.2) |
+| TP7 | `/CAN2_TX` (U1 TXD) | (80.0, 75.7) |
+| TP8 | `/CAN2_RX` (U1 RXD) | (67.1, 115.6) |
+| TP9 | `/CAN1_TX` (U2 TXD) | (29.1, 115.5) |
+| TP10 | `/CAN1_RX` (U2 RXD) | (28.0, 124.2) |
+| TP11 | +5V | (55.5, 108.4) |
+
+TP1 and TP2 were first 1.5 mm surface pads. They were moved a few millimetres and converted to the same through-hole footprint,
+because the back-layer tracks under their old positions would have clashed with a through-hole pad. TP2 is the scope ground.
+
 ---
 
 ## 6. Parts that were moved (none of J3–J6)
