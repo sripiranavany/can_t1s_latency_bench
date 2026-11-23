@@ -196,7 +196,7 @@ The board is a symmetric rectangle with two 2×35 sockets, so it could be plugge
 ### 5.10 Ground (GND)
 - A **ground pour (zone) on both F.Cu and B.Cu** covering the whole board.
 - Every GND pad connects into the pour (thermal-relief spokes: 0.4 mm bridges, 0.3 mm gap).
-- **Vias join the top and bottom pours** so both are one ground. (The board currently has 6 GND vias: two at the ESD diodes and four near the CAN transceivers – see §8.)
+- **Vias join the top and bottom pours** so both are one ground. (The board has 23 GND vias: two at the ESD diodes, four near the CAN transceivers and 17 stitching vias spread over the board so no point on the pour is more than about 12 mm from a via – see §8.)
 - Because of the pour, you do not see individual GND tracks; ground is "everywhere there is no other signal".
 
 ---
@@ -234,8 +234,8 @@ Why:
 6. Use *Appearance → Layers* to view only `F.Cu`, then only `B.Cu`.
 
 ### Things to improve / double-check
-- **Stitching vias:** only 6 GND vias exist (two at the ESD diodes, four near the transceivers and the termination resistors). Adding a few more near the edges and next to the signal vias
-  (*Place → Via*, set net to `GND`) improves return-current paths between the two ground pours.
+- **Stitching vias:** 17 GND stitching vias were added in open copper (0.6 / 0.3 mm, at least 0.5 mm from any other net),
+  spaced about 12 mm apart or less. Refill the zones (`B`) and re-run DRC after moving any signal track near them.
 - **Check the current rating:** 0.5 mm copper at 1 oz handles roughly 1 A; verify this is enough for your 3V3 and 5V loads.
 - **Fab capabilities:** the design uses 0.2 mm clearance, 0.25 mm signal tracks and 0.6/0.3 mm vias.
   Confirm your manufacturer allows these (most standard 2-layer services do).
